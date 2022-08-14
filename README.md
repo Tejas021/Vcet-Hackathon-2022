@@ -27,7 +27,7 @@
     
     `npm install`
     
-    Run React App: 
+    Start React App: 
     
     `npm run dev`
 
