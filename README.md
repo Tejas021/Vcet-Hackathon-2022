@@ -10,7 +10,7 @@
 
 1.  Clone the repo on your computer.
 
-    `git clone `
+    `git clone https://github.com/Tejas021/Vcet-Hackathon-2022.git`
 
 
 2.  Setup Environment and dependencies.
@@ -19,7 +19,13 @@
 
 3. To run React App
     
-    `cd vcet`
+    `cd vcet_hackathon_2022`
+    
+    Install Dependencies:
+    `npm install`
+    
+    Run React App: 
+    `npm run dev`
 
 
 
@@ -27,7 +33,7 @@
 
 1) On your master branch
 
-    `git pull https://github.com/Mayank-567/vcet-hackathon-2021`
+    `git pull https://github.com/Tejas021/Vcet-Hackathon-2022.git`
 
 2) Checkout to Your own branch.
 
