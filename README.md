@@ -19,12 +19,16 @@
 
 3. To run React App
     
+    Navigate to root Directory: 
+    
     `cd vcet_hackathon_2022`
     
     Install Dependencies:
+    
     `npm install`
     
     Run React App: 
+    
     `npm run dev`
 
 
