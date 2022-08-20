@@ -21,7 +21,7 @@
     
     Navigate to root Directory: 
     
-    `cd vcet_hackathon_2022`
+    `cd Vcet-Hackathon-2022`
     
     Install Dependencies:
     
