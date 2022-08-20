@@ -1,8 +1,8 @@
 import React from 'react'
-
+import styles from "./Landing.module.css";
 const Landing = () => {
   return (
-    <div>
+    <div className={styles.test1}>
       Landing Page
     </div>
   )
