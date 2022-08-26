@@ -1,11 +1,16 @@
-import React from 'react'
 
-const Gallery = () => {
+
+import "./Gallery.css";
+
+// import required modules
+
+
+export default function Gallery() {
+  
+
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+ 
+    </>
+  );
 }
-
-export default Gallery
