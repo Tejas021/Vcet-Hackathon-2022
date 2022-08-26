@@ -2,8 +2,10 @@ import React from 'react'
 import styles from "./Landing.module.css";
 const Landing = () => {
   return (
-    <div className={styles.test1}>
-      Landing Page
+    <div style={{
+      height:'120vh',backgroundColor:'#180828'
+    }} className={styles.test1}>
+      
     </div>
   )
 }
