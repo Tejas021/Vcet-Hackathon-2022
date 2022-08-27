@@ -6,12 +6,13 @@
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 700px;
+    position: relative;
 }
 
 .timeline_content-title {
     font-weight: normal;
     font-size: 66px;
-    margin: 10px 0 0 0;
+    margin: -10px 0 0 0;
     transition: 0.4s;
     padding: 0 10px;
     box-sizing: border-box;
@@ -56,7 +57,7 @@
     width: calc(50% - 40px);
     display: flex;
     position: relative;
-    transform: translate(-80px);
+    transform: translateY(-80px);
 }
 
 .timeline-item::before {
@@ -73,9 +74,6 @@
     padding-left: 15px;
     opacity: 0;
     right: calc(-100% - 56px);
-    padding-left: none;
-    padding-right: 2px solid rgba(255, 255, 255, 0.5);
-
 }
 
 .timeline-item:nth-child(even) {
