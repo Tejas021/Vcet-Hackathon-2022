@@ -42,3 +42,41 @@ box-shadow:0 0 20px #200878;
 transform: translateY(-30%);
     
 }
+
+
+@media only screen and (max-width: 420px) {
+    
+
+    .gal{
+        padding: 10px;
+     
+     }
+     
+     .carInner{
+         width: 300px;
+      
+     }
+
+
+     
+.carInner img{
+    height: 200px;
+ 
+}
+
+.carCap h5 {
+font-size: 15px !important;  
+}
+
+.carCap p{
+    font-size: 10px !important;  
+}
+
+.carInner:hover .carCap{
+   
+transform: translateY(-60%);
+    
+}
+
+
+  }
