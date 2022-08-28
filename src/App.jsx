@@ -1,17 +1,23 @@
 
 import './App.css'
-import Gallery from './components/Gallery/Gallery'
-import Landing from './components/Landing/Landing'
-import Navbar from './components/Navbar/Navbar'
+import {BrowserRouter as Router ,Routes,Route} from "react-router-dom"
+import Home from './pages/Home/Home'
+import Form from './pages/Form/Form'
 
 function App() {
 
 
   return (
     <div className="App">
-      <Navbar />
-      <Landing/>
-      <Gallery/>
+  <Router>
+  
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='register' element={<Form/>}/>
+    <Route/>
+    </Routes>
+
+  </Router>
       
     </div>
   )
