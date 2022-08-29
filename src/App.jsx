@@ -3,6 +3,8 @@ import './App.css'
 import Gallery from './components/Gallery/Gallery'
 import Landing from './components/Landing/Landing'
 import Navbar from './components/Navbar/Navbar'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
       <Navbar />
       <Landing/>
       <Gallery/>
+      <Contact/>
+      <Footer/>
       
     </div>
   )
