@@ -1,10 +1,9 @@
 
 import './App.css'
 
-import Gallery from './components/Gallery/Gallery'
-import Landing from './components/Landing/Landing'
-import Navbar from './components/Navbar/Navbar'
-
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import Home from './pages/Home/Home'
+import Form from './pages/Form/Form'
 
 
 function App() {
