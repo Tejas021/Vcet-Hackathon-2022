@@ -3,6 +3,7 @@ import Faq from '../../components/Faq/Faq'
 import Gallery from '../../components/Gallery/Gallery'
 import Landing from '../../components/Landing/Landing'
 import Navbar from '../../components/Navbar/Navbar'
+import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
 
 
@@ -11,11 +12,13 @@ const Home = () => {
     <div>
       <Navbar/>
       <Landing/>
+      <Sponsor/> 
+      <Rules/>
       <Gallery/>
-      <Sponsor/>      
       <Faq/>
     </div>
   )
 }
 
 export default Home
+
