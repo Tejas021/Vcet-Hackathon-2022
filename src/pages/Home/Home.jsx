@@ -14,7 +14,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <Landing/>
-      <Sponsor/> 
+    <Sponsor/>
       <Rules/>
       <Gallery/>
       <Faq/>
