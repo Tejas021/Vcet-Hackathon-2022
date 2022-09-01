@@ -55,4 +55,4 @@
     }
 }) (jQuery);
 
-$("#timeline-1").timeline();
+$(".timeline-container").timeline();
