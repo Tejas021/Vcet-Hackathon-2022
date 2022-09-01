@@ -65,6 +65,10 @@ body {
 
 /*.social2 icons */
 
+.container2 .box2 .content2 ul {
+    padding-left: 0;
+}
+
 .container2 .box2 .content2 .social2_icon {
     display: flex;
     list-style: none;
@@ -104,9 +108,10 @@ div.box2:nth-child(4) {
 }
 
 .container2 .map .content2 {
-    height: 100%;
-    max-width: 100%;
+    height: 10rem;
+    max-width: 96%;
     width: 23rem;
+    max-height: 100%;
 }
 
 .container2 .map .content2 iframe {
@@ -195,5 +200,8 @@ div.box2:nth-child(4) {
 @media (max-width: 600px) {
     .container2 {
         display: block;
+    }
+    .container2 .box2 .content2 ul {
+        padding-left: 0;
     }
 }
