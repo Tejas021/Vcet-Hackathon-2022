@@ -108,7 +108,8 @@ div.box2:nth-child(4) {
 }
 
 .container2 .map .content2 {
-    height: 10rem;
+    /* height: 10rem; */
+    height: 100%;
     max-width: 96%;
     width: 23rem;
     max-height: 100%;
