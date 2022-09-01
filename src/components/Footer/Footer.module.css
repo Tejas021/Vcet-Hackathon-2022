@@ -31,7 +31,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    /* margin-bottom: 1rem; */
 }
 
 .container .box {
@@ -45,7 +46,7 @@
     width: 100%;
     /* border: 1px solid #ddd; */
     border-radius: 4px;
-    max-width: 12.5rem;
+    /* max-width: 12.5rem; */
 }
 
 .container .box .content p {
@@ -75,6 +76,10 @@
     margin-left: 3rem;
 } */
 
+.container .quick_links .content ul {
+    padding-left: 0;
+}
+
 .container .quick_links .content ul li {
     /* margin-right: 1rem; */
     margin: 0.3rem 0;
@@ -98,6 +103,10 @@
 
 
 /* social icons */
+
+.container .box .content ul {
+    padding-left: 0;
+}
 
 .container .box .content .social_icon {
     display: flex;
@@ -155,3 +164,22 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 600px) {
+    /* .footer {
+        padding: 0;
+    }
+    .container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .container .box {
+        padding: 0rem;
+    } */
+    .container .quick_links .content ul {
+        padding-left: 0;
+    }
+}
+
+
+/* comment */
