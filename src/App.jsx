@@ -1,14 +1,17 @@
 
 import './App.css'
-import {BrowserRouter as Router ,Routes,Route} from "react-router-dom"
+
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import Home from './pages/Home/Home'
 import Form from './pages/Form/Form'
+
 
 function App() {
 
 
   return (
     <div className="App">
+
   <Router>
   
     <Routes>
@@ -18,6 +21,7 @@ function App() {
     </Routes>
 
   </Router>
+
       
     </div>
   )

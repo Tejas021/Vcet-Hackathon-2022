@@ -2,8 +2,12 @@ import React from 'react'
 import "./sponsor.css"
 function Sponsor() {
     return (
-        <div> <div className="main-container">
+        <div> 
+        
+        <div className="main-container">
 
+
+<h1 className='text-center text-light mb-3'>Previous Sponsors</h1>
             <div className="spons-cont grid" id="spons-cont">
                 <div className="t1 h2">Title Sponsor</div>
                 <a href="https://deardigital.be/" className="title-spons sponsor-card" target="_blank">
@@ -48,7 +52,7 @@ function Sponsor() {
                 </a>
                 <div className="mp h3">Media Partner</div>
                 <a href="/" className="mps sponsor-card" target="_blank">
-                    <img src="../../assets/sponsors" alt="" />
+                    <img src="../../assets/sponsors/" alt="" />
                 </a>
             </div>
         </div>
