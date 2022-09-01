@@ -1,0 +1,31 @@
+.textPurple{
+    color: #7A2BAA;
+}
+
+.textBlue{
+    color: #A36CE0;
+}
+
+
+.hLight{
+    color: #A36CE0;
+    font-weight: 350%;
+}
+
+.ruleList{
+    list-style-type: "🚀 ";
+}
+
+.ruleList li{
+
+    margin: 10px;
+}
+
+@media only screen and (max-width: 420px) {
+    
+.ruleList li{
+
+    margin: 5px;
+}
+
+}
