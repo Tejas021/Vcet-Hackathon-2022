@@ -1,0 +1,54 @@
+.prizes-bg {
+    background-image: linear-gradient(to right, #9981e8, #180828);
+    padding: 2%;
+}
+
+.prize-text {
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.75);
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+}
+
+.prize-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.prize-box {
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    padding: 18px 30px 4px;
+    background-color: #180828;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0 4%;
+    border-bottom: 10px solid rgb(253 133 61);
+}
+
+.trophy {
+    height: 300px;
+    width: 200px;
+
+}
+
+.prize-position, .prize-amount{
+    text-shadow: 0 2px 8px rgb(253 133 61);
+    color: white;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+@media screen and (max-width:992px) {
+    .prize-row{
+        display: block;
+    }
+    .prize-box{
+        margin: 4% auto;
+    }
+}

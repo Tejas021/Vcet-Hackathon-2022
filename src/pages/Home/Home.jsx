@@ -11,6 +11,7 @@ import Landing from '../../components/Landing/Landing'
 import Navbar from '../../components/Navbar/Navbar'
 import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
+import Prizes from '../../components/prizes/Prizes'
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Rules />
       <About />
       <Gallery />
+      <Prizes />
       <Faq />
       <Contact/>
       <Footer/>
