@@ -83,14 +83,14 @@ const Footer = () => {
 
 
 
-<div className={FooterCss.copyright}>
-    <div className={FooterCss.content}>
-        Copyright © 2022 All rights reserved by Vidyavardhini's College Of Engineering & Technology
-    </div>
-</div>
+
 
 </footer>
-    
+<div className={FooterCss.copyright}>
+<div className={FooterCss.content}>
+    Copyright © 2022 All rights reserved by Vidyavardhini's College Of Engineering & Technology
+</div>
+</div>
     </>
   )
 }

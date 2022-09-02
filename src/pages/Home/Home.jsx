@@ -20,10 +20,10 @@ const Home = () => {
       <Navbar />
       <Landing />
       <Sponsor />
+      <Prizes />
       <Rules />
       <About />
       <Gallery />
-      <Prizes />
       <Faq />
       <Contact/>
       <Footer/>

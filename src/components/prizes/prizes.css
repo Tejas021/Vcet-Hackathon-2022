@@ -5,7 +5,7 @@
 
 .prize-text {
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.75);
-    font-weight: 800;
+ 
     text-align: center;
     color: #ffffff;
 }
@@ -32,8 +32,8 @@
 }
 
 .trophy {
-    height: 300px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
 
 }
 
