@@ -1,6 +1,8 @@
-// import React from 'react'
+import React from 'react'
 
-import "./Timeline.module.css";
+
+
+import Styles from "./Timeline.module.css";
 import  WorkIcon from "../../assets/timeline/code.png";
 // import  SchoolIcon  from "../../assets/timeline/code.png";
 // import timeline from "./Timeline/timeline";
@@ -13,67 +15,57 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 function Timeline() {
-  let workIconStyles = { background: "#06D6A0" };
+  let workIconStyles = { background: "#a36ce0" };
+  // let date = {color: white}
   // let schoolIconStyles = { background: "#f9c74f" };
 
   let timelineElements = [
     {
       id: 1,
-      title: "Frontend Developer",
-      location: "Dragontail, Ascana",
+      title: "10:00 AM",
       description:
-        "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-      buttonText: "View Frontend Projects",
-      date: "August 2016 - present",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 2,
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
+      title: "10:00 AM",
       description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      buttonText: "View Backend Projects",
-      date: "June 2013 - August 2016",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 3,
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
+      title: "10:00 AM",
       description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      buttonText: "Company Website",
-      date: "September 2011 - June 2013",
+        "AssLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 4,
-      title: "Oak Ridge College",
-      location: "South Warren, Geshington",
+      title: "10:00 AM",
       description:
-        "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "Course Certificate",
-      date: "September 2011",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 5,
-      title: "Hawking College",
-      location: "Skystead, Craonia",
+      title: "10:00 AM",
       description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "College Projects",
-      date: "2007 - 2011",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 6,
-      title: "Marble Hills Grammar School",
-      location: "Dragontail, Ascana",
+      title: "10:00 AM",
       description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2003 - 2007",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+      date: "Vcet Hackathon",
       icon: "work",
     },
   ];
@@ -93,16 +85,13 @@ function Timeline() {
             <VerticalTimelineElement
               key={element.key}
               date={element.date}
-              dateClassName="date"
+              dateClassName={Styles.date}
               iconStyle={workIconStyles }
               icon={ < img src={WorkIcon} />}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
-              <h5 className="vertical-timeline-element-subtitle">
-                {element.location}
-              </h5>
               <p id="description">{element.description}</p>
               {showButton && (
                 <a

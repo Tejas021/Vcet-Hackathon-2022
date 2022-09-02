@@ -11,6 +11,11 @@
     font-family: "Bebas Neue", sans-serif;
   }
   
+  h1{
+    text-align: center;
+    color: white;
+  }
+
   h3 {
     padding-top: 0.25em;
   }
@@ -21,12 +26,16 @@
     padding: 2em 3em !important;
   }
   
-  .date {
-    color: rgb(201, 251, 255);
+  .date  {
+    color: white;
   }
   
   #description {
     margin: 1.5em 0 2em 0;
+  }
+
+  .container{
+    background-color: #7a2baa;
   }
   
   .button {
@@ -36,27 +45,18 @@
     color: white;
   }
   
-  .workButton {
-    background-color: #06d6a0;
+  img{
+    vertical-align: middle;
+    height: 51px;
+    padding-left: 5px;
   }
-  
-  .workButton:hover {
-    background-color: #0ac593;
-  }
-  
-  .schoolButton {
-    background-color: #f9c74f;
-  }
-  
-  .schoolButton:hover {
-    background-color: #f3bc3c;
-  }
-  
+
   @media only screen and (max-width: 1700px) {
     .vertical-timeline-element-date {
       display: block !important;
       float: none !important;
       color: rgb(44, 44, 44);
       margin-top: 1.5em;
+      color: white;
     }
   }
