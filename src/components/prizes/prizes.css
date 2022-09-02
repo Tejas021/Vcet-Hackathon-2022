@@ -1,6 +1,13 @@
 .prizes-bg {
-    background-image: linear-gradient(to right, #9981e8, #180828);
-    padding: 2%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        #800080a0 55%,
+        #800080a0 45%,
+        rgba(0, 0, 0, 1) 100%
+      ), url("../../assets/backgrounds/space.jpg");
+      background-attachment: fixed;;
+    padding: 50px;
 }
 
 .prize-text {
@@ -50,5 +57,9 @@
     }
     .prize-box{
         margin: 4% auto;
+    }
+
+    .prizes-bg{
+        padding:15px
     }
 }

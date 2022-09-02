@@ -22,7 +22,7 @@ const Home = () => {
       <Sponsor />
       <Prizes />
       <Rules />
-      <About />
+     
       <Gallery />
       <Faq />
       <Contact/>

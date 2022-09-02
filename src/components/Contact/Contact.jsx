@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
     <div className={`${ContactCss.section}  ${ContactCss.contacts}`}>
-        <h1 className={`md-5 ${ContactCss.title}`}>Contact Us</h1>
+        <h1 className={`mb-2 mb-md-5 ${ContactCss.title}`}>Contact Us</h1>
         <div className={ContactCss.container2}>
             <div className={ContactCss.box2}>
                 <h2>Lets get in touch!</h2>
