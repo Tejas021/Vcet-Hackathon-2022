@@ -5,8 +5,8 @@ import ContactCss from   "./Contact.module.css";
 const Contact = () => {
   return (
     <>
-    <div className={`p-md-5 p-1 ${ContactCss.contacts}`}>
-        <h2 className={`md-3 ${ContactCss.title}`}>Contact Us</h2>
+    <div className={`${ContactCss.section}  ${ContactCss.contacts}`}>
+        <h1 className={`md-5 ${ContactCss.title}`}>Contact Us</h1>
         <div className={ContactCss.container2}>
             <div className={ContactCss.box2}>
                 <h2>Lets get in touch!</h2>
