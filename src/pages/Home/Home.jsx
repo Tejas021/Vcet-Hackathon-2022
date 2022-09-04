@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
+import Timer from '../../components/Timer/Timer'
 import Faq from '../../components/Faq/Faq'
 import Gallery from '../../components/Gallery/Gallery'
 import Landing from '../../components/Landing/Landing'
@@ -14,7 +15,8 @@ const Home = () => {
     <div>
       <Navbar/>
       <Landing/>
-    <Sponsor/>
+      <Timer/>
+      <Sponsor/>
       <Rules/>
       <Gallery/>
       <Faq/>
