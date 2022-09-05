@@ -11,7 +11,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     margin-left: 550px;
-
+    padding: 6px;
 }
 
 .reddot {
@@ -20,6 +20,7 @@
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 5px;
 }
 
 .yellowdot {
@@ -28,6 +29,7 @@
     background-color: yellow;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 10px;
 }
 
 .greendot {
@@ -36,15 +38,15 @@
     background-color: green;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 10px;
 }
 
 .AboutBoxBody {
     width: 750px;
     height: 350px;
-    background-color: #7A2BAA;
+    background-color: #180828;
     color: white;
-    border-bottom: 1px solid #ccc;
-    /* border-radius: 5px 5px 0 0; */
+    border-bottom: 1px solid #7A2BAA;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow: auto;
@@ -58,8 +60,8 @@
     font-size: 20px;
     color: #0000;
     background:
-        linear-gradient(-90deg, #180828 1px, #0000 0) 10px 0,
-        linear-gradient(#180828 0 0) 0 0;
+        linear-gradient(-90deg, #A36CE0 1px, #0000 0) 10px 0,
+        linear-gradient(#A36CE0 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 200%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
