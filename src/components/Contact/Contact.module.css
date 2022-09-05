@@ -6,6 +6,8 @@
 }
 
 
+
+
 /* #200878
 #100848
 #180828
@@ -23,6 +25,11 @@
 body {
     overflow-x: hidden;
     /* font-family: "Lato", sans-serif; */
+}
+
+
+.section{
+    padding:50px
 }
 
 .contacts {
@@ -205,4 +212,10 @@ div.box2:nth-child(4) {
     .container2 .box2 .content2 ul {
         padding-left: 0;
     }
+
+    .section{
+        padding:5px
+    }
+    
+    
 }

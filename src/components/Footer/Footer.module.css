@@ -136,6 +136,17 @@
     color: var(--light);
 }
 
+.footer{
+    background:#272727
+}
+
+.copyright{
+    text-align: center;
+    background: #121212;
+    color: var(--light);
+    padding:10px;
+}
+
 @media (max-width: 1100px) {
     .container {
         display: grid;
