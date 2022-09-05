@@ -5,6 +5,8 @@ import About from '../../components/About/About'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 
+import Timer from '../../components/Timer/Timer'
+
 import Faq from '../../components/Faq/Faq'
 import Gallery from '../../components/Gallery/Gallery'
 import Landing from '../../components/Landing/Landing'
@@ -17,15 +19,17 @@ import Prizes from '../../components/prizes/Prizes'
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Landing />
+
+
+      <Navbar/>
+      <Landing/>
       <About/>
-      <Sponsor />
-      <Prizes />
-      <Rules />
-     
-      <Gallery />
-      <Faq />
+      <Timer/>
+      <Sponsor/>
+      <Rules/>
+      <Gallery/>
+      <Faq/>
+
       <Contact/>
       <Footer/>
 
