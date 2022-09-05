@@ -19,6 +19,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Landing />
+      <About/>
       <Sponsor />
       <Prizes />
       <Rules />
