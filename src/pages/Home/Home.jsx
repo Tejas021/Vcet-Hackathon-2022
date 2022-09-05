@@ -25,6 +25,7 @@ const Home = () => {
       <Landing/>
       <About/>
       <Timer/>
+      <Prizes/>
       <Sponsor/>
       <Rules/>
       <Gallery/>
