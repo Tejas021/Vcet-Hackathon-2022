@@ -20,13 +20,17 @@ const Home = () => {
   return (
     <div>
 
+
       <Navbar/>
       <Landing/>
+      <About/>
       <Timer/>
+      <Prizes/>
       <Sponsor/>
       <Rules/>
       <Gallery/>
       <Faq/>
+
       <Contact/>
       <Footer/>
 
