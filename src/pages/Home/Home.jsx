@@ -14,6 +14,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
 import Prizes from '../../components/prizes/Prizes'
+import Timeline from '../../components/Timeline/Timeline'
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
       <Timer/>
       <Prizes/>
       <Sponsor/>
+      <Timeline/>
       <Rules/>
       <Gallery/>
       <Faq/>

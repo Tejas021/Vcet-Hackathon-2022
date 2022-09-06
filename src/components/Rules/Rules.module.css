@@ -6,6 +6,19 @@
     color: #A36CE0;
 }
 
+.bgBlue{
+    background-color: #A36CE0;
+}
+
+.Link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.Link:hover{
+    text-decoration: none;
+    color: aliceblue;
+}
 
 .hLight{
     color: #A36CE0;

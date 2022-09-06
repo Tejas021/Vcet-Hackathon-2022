@@ -29,6 +29,10 @@ body {
     /* font-family: "Lato", sans-serif; */
 }
 
+.bgBlue{
+    color: #7A2BAA;
+  }
+
 .container {
     height: auto;
     width: 100%;
