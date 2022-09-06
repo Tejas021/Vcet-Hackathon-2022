@@ -87,7 +87,7 @@ function Timeline() {
               date={element.date}
               dateClassName={Styles.date}
               iconStyle={workIconStyles }
-              icon={ < img src={WorkIcon} />}
+              icon={ < img className={`${Styles.image1}`} src={WorkIcon} />}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
