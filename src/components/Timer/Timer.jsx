@@ -80,7 +80,11 @@ const Timer = () => {
 
  
   return (
-    <div className={TimerCss.container}>
+
+    <div className={`p-2 p-md-5 ${TimerCss.bgBlue} `}>
+    <h1 className={`${TimerCss.bgBlue}`}>Enter the Hackverse in :</h1>
+    <div className={`p-2 p-md-5 ${TimerCss.container} `}>
+    
        <div className={TimerCss.timer}>
             <div className= {`${TimerCss.content} ${TimerCss.box}`}  >
                 <div className={`${TimerCss.dots} ${TimerCss.day_dot}`} style={{transform:`rotate(${timerDays*15}deg)`}}></div>
@@ -128,6 +132,7 @@ const Timer = () => {
                 </div>
             </div>
        </div>
+    </div>
     </div>
   )
 }

@@ -1,5 +1,8 @@
+
 import React from 'react'
 import styles from "./Rules.module.css"
+import {Link} from "react-router-dom"
+
 const Rules = () => {
   return (
     <div className='container p-md-5 p-2 py-4'>
@@ -19,6 +22,7 @@ const Rules = () => {
 
 </ul>
 
+<button className={`${styles.bgBlue} btn text-light m-3 p-2`}><Link to="/register" className={`${styles.Link}`}>REGISTER NOW</Link></button>
 
 <h3 className={`${styles.textPurple} mb-3`}>Registration</h3>
 
@@ -35,6 +39,11 @@ const Rules = () => {
 <li> Further details will be provided in email.</li>
 <li> Following are the details of payment.</li>
 </ul>
+
+<div>
+<button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2`}>NEFT</button>
+<button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2`}>UPI</button>
+</div>
     </div>
   )
 }
