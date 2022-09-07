@@ -6,6 +6,7 @@ function About() {
 
     return (
         <div className={`p-2 p-md-5 ${styles.AboutBox}`}>
+        <h1 className='mb-md-5 mb-3'>About Us</h1>
             <div className={styles.AboutBoxTopBar}>
                 <span className={styles.reddot}></span>
                 <span className={styles.yellowdot}></span>
