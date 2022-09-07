@@ -2,17 +2,7 @@ import React from 'react'
 import styles from "./Landing.module.css";
 const Landing = () => {
   return (
-    <div style={{
-      height:'100vh',background:`linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 1) 0%,
-        #100848a0 10%,
-        #00000000 50%,
-        #00000000 70%,
-        #100848a0 90%,
-        rgba(0, 0, 0, 1) 100%
-      ),url("/src/assets/landing.jpg")`,backgroundAttachment:"fixed"
-    }} className="d-flex flex-column justify-content-center">
+    <div className={`d-flex flex-column justify-content-center ${styles.LandingContainer}`}>
 
 
       <h1 >VidyaVardhini's College Of Engineering and Technolgy </h1>
