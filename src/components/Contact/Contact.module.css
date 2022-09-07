@@ -50,7 +50,7 @@ body {
     gap: 1rem;
     /* padding: 1rem; */
     width: 100%;
-    margin: 1rem 3rem;
+    /* margin: 1rem 3rem; */
     justify-items: baseline;
     margin-bottom: 0;
 }
@@ -185,7 +185,7 @@ div.box2:nth-child(4) {
         gap: 1rem;
         padding: 1rem;
         width: 100%;
-        margin: 1rem 1.5rem;
+        /* margin: 1rem 1.5rem; */
         /* add */
         margin-bottom: 0;
     }
