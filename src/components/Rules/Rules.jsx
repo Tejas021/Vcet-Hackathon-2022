@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 
 const Rules = () => {
   return (
-    <div className='container p-md-5 p-2 py-4'>
+    <div className='container p-md-5 p-3 py-4 my-5'>
       <h1 className={`text-center text-light mb-3`}>Event Guidlines</h1>
 <h3 className={`${styles.textPurple} mb-3`}>Rules</h3>
 <ul className={`text-light ${styles.ruleList}`}>
