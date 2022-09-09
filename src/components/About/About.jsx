@@ -25,8 +25,7 @@ function About() {
                         <span>9</span>
                         <span>10</span>
                         <span>11</span>
-                        <span>12</span>
-                        <span>13 </span>
+                      
                     </div>
                     <div className={styles.text}>
                         <span className={styles.type}>
