@@ -16,8 +16,8 @@
 }
 
 .reddot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: red;
     border-radius: 50%;
     display: inline-block;
@@ -25,8 +25,8 @@
 }
 
 .yellowdot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: yellow;
     border-radius: 50%;
     display: inline-block;
@@ -34,8 +34,8 @@
 }
 
 .greendot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: green;
     border-radius: 50%;
     display: inline-block;
@@ -45,16 +45,31 @@
 .AboutBoxBody {
     width: 750px;
     height: 350px;
-    background-color: #180828;
+    background-color: rgb(17, 31, 51);
     color: white;
     border-bottom: 1px solid #7A2BAA;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     overflow: auto;
-    padding: 30px;
+    padding: 20px;
     margin-left: 550px;
 }
 
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 8px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: grey;
+}
 
 .type {
     font-family: Arial, Helvetica, sans-serif;
@@ -101,4 +116,3 @@
         margin-left: 0px;
     }
 }
-    
