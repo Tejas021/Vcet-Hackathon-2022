@@ -59,4 +59,10 @@
       margin-top: 1.5em;
       color: white;
     }
+
+    img {
+      height: 33px;
+      padding-left: 3px;
+  }
+
   }
