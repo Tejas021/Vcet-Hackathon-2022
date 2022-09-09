@@ -3,6 +3,7 @@
     height: fit-content;
     margin-left: 150px;
     margin-top: 70px;
+    margin-bottom: 15px;
 }
 
 .AboutBoxTopBar {
@@ -84,3 +85,20 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .AboutBox {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .AboutBoxTopBar {
+        margin-left: 0px;
+    }
+
+    .AboutBoxBody {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+    
