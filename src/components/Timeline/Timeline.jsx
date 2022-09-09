@@ -71,8 +71,8 @@ function Timeline() {
   ];
 
   return (
-    <div className="p-5">
-      <h1 className="title mb-2 mb-md-5 ">Timeline</h1>
+    <>
+      <h1 className="title">Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -87,7 +87,7 @@ function Timeline() {
               date={element.date}
               dateClassName={Styles.date}
               iconStyle={workIconStyles }
-              icon={ < img className={`${Styles.image1}`} src={WorkIcon} />}
+              icon={ < img src={WorkIcon} />}
             >
               <h3 className="vertical-timeline-element-title">
                 {element.title}
@@ -107,7 +107,7 @@ function Timeline() {
           );
         })}
       </VerticalTimeline>
-    </div>
+    </>
   );
 }
 
