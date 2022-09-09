@@ -1,4 +1,5 @@
 
+
 import React from 'react'
 import styles from "./About.module.css";
 import './About.scss'
@@ -181,6 +182,7 @@ function About() {
         </div>
     )
 }
+
 
 
 export default About;
