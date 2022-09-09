@@ -5,7 +5,7 @@ import styles from "./About.module.css";
 function About() {
 
     return (
-        <div className={`p-2 p-md-5 ${styles.AboutBox}`}>
+        <div className={`p-2  ${styles.AboutBox}`}>
         <h1 className='mb-md-5 mb-3'>About Us</h1>
             <div className={styles.AboutBoxTopBar}>
                 <span className={styles.reddot}></span>
