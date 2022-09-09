@@ -17,6 +17,7 @@ import Prizes from '../../components/prizes/Prizes'
 import Timeline from '../../components/Timeline/Timeline'
 
 
+
 const Home = () => {
   return (
     <div>
