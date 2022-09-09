@@ -7,8 +7,11 @@ import './About.scss'
 function About() {
 
     return (
-        <div>
-            <div className="container">
+        <div className='h-100 mb-5'>
+        <h1 className='text-light text-center my-4 mt-md-5'>About Us</h1>
+        <div class={`${styles.AboutParent} container`}>
+     
+            <div className="container1">
                 <svg id="galaxy" viewBox="-10 -10 670 670" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                     <defs>
                         <linearGradient id="galaxy-vector_31-fill" x1="293.478" y1="578.9" x2="331.696" y2="617.078" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)">
@@ -179,6 +182,9 @@ function About() {
                 </div>
             </div>
         </div>
+        </div>
+
+        
     )
 }
 

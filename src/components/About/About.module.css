@@ -1,9 +1,16 @@
 .AboutBox {
     width: fit-content;
     height: fit-content;
-    margin-left: 150px;
+  
     margin-top: 70px;
     margin-bottom: 15px;
+}
+
+.AboutParent{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .AboutBoxTopBar {
@@ -11,7 +18,7 @@
     padding: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    margin-left: 550px;
+  
     padding: 6px;
 }
 
@@ -43,7 +50,7 @@
 }
 
 .AboutBoxBody {
-    width: 750px;
+    width: 700px;
     height: 350px;
     background-color: rgb(17, 31, 51);
     color: white;
@@ -52,7 +59,7 @@
     border-bottom-right-radius: 15px;
     overflow: auto;
     padding: 20px;
-    margin-left: 550px;
+ 
 }
 
 .main{
@@ -115,4 +122,12 @@
         width: 100%;
         margin-left: 0px;
     }
+
+    .AboutParent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

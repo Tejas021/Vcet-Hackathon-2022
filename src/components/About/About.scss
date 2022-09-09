@@ -1,16 +1,18 @@
-.container {
-  height: 100vh;
+.container1{
+  
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  
 }
 
 #galaxy {
-  width: max-content;
+  width: 80%
   // border: 2px solid red;
   // margin-top: 150px;
-  margin-right: 750px;
-  margin-bottom: -1250px;
+  // margin-right: 750px;
+  // margin-bottom: -1250px;
 }
 
 #galaxy-earth_to {
