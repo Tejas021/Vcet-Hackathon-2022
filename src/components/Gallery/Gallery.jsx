@@ -13,7 +13,7 @@ export default function Gallery() {
   
 
   return (
-    <div className={styles.gal}>
+    <div className={styles.gal} >
     <h1 className="mb-md-5 mb-3 text-center text-light">Event Gallery</h1>
     <div id="carouselExampleCaptions" className={`carousel slide ${styles.carInner} m-auto`} data-bs-ride="carousel">
 

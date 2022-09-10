@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Navbar.css"
 import logo from '../../assets/logo_white_hackthon.png'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -19,23 +20,25 @@ function Navbar() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link " aria-current="page" href="#">Home</a>
                         </li>
                         <li style={{ borderBottom: '1px solid white' }} className="nav-item">
                             <a className="nav-link " aria-current="page" href="#">Home</a>
+                        </li> */}
+                        <li className="nav-item">
+                            
+                        <Link to={"/"} className="nav-link " aria-current="page" >Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            
+                        <Link to={"/Rules"} className="nav-link " aria-current="page" >Rules</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <Link to={"/Association"} className="nav-link " aria-current="page" >Contact Us</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <Link to={"/Info"} className="nav-link " aria-current="page" >About Us</Link>
                         </li>
                     </ul>
                 </div>
