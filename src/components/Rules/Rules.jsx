@@ -40,9 +40,47 @@ const Rules = () => {
 <li> Following are the details of payment.</li>
 </ul>
 
+
+
+<div class="modal fade  text-light" id="NEFT" tabindex="-1" aria-labelledby="NEFT" aria-hidden="true">
+  <div class="modal-dialog " >
+    <div class="modal-content a" style={{color:"#7A2BAA",background:"#180828"}}>
+      <div class="modal-header ">
+        <h5 class="modal-title " id="NEFT">NEFT Details</h5>
+       
+      </div>
+      <div class="modal-body" >
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  text-light" id="UPI" tabindex="-1" aria-labelledby="UPI" aria-hidden="true">
+  <div class="modal-dialog " >
+    <div class="modal-content " style={{color:"#7A2BAA",background:"#180828"}}>
+      <div class="modal-header ">
+        <h5 class="modal-title " id="UPI">UPI Details</h5>
+       
+      </div>
+      <div class="modal-body" >
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 <div>
-<button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4`}>NEFT</button>
-<button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2 px-4`}>UPI</button>
+<button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-toggle="modal" data-bs-target="#NEFT">NEFT</button>
+<button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2 px-4`} data-bs-toggle="modal" data-bs-target="#UPI">UPI</button>
 </div>
     </div>
   )
