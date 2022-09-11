@@ -15,7 +15,7 @@ function Sponsor() {
                 </a>
                 <div className="pb1 h2">Powered by</div>
                 <a href="https://internetivo.com/" className="pb-spons-1 sponsor-card" target="_blank">
-                    <img src="/sponsors/contentstack.png" alt="" />
+                    <img src="/sponsors/internetivo.png" alt="" />
                 </a>
                 <div className="pb2 h2">Co-powered by</div>
                 <a href="/" className="pb-spons-2 sponsor-card" target="_blank">
@@ -36,7 +36,7 @@ function Sponsor() {
                 </a>
                 <div className="cnp h3">Community Partner</div>
                 <a href="/" className="cnps sponsor-card" target="_blank">
-                    <img src="/sponsors/loksatta.png" alt="" />
+                    <img src="/sponsors/jetbrains-variant-42021.png" alt="" />
                 </a>
                 <div className="tp h3">Technology Partner</div>
                 <a href="/" className="tps sponsor-card" target="_blank">
