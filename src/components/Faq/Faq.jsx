@@ -2,7 +2,7 @@ import React from "react";
 import "./Faq.css"
 function Faq() {
   return (
-    <div className="mb-5 text-light">
+    <div className="mb-5 text-light" id="FAQ">
       <i className="fas fa-bell-slash"></i>
       <div className="container mt-5 ">
         <h1 className="text-center">FAQ</h1>
