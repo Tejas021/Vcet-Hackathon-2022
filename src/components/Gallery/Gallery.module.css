@@ -1,4 +1,9 @@
 .gal{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
    padding: 50px;
  background-image:linear-gradient(
     to bottom,
@@ -11,7 +16,7 @@
 }
 
 .carInner{
-    width: 650px;
+    width: 750px;
     background-color: black;
     border-radius: 10px;
     -webkit-box-shadow:0 0 20px #200878; 
@@ -20,7 +25,7 @@ box-shadow:0 0 20px #200878;
 }
 
 .carInner img{
-    height: 400px;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -45,23 +50,25 @@ transform: translateY(-30%);
 }
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 800px) {
     
 
     .gal{
-        padding: 10px;
-     
+        padding: 20px 10px;
+        height: 50vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
      }
      
      .carInner{
-         width: 300px;
+         width: 95vw;
       
      }
 
 
      
 .carInner img{
-    height: 200px;
+    height: 250px;
  
 }
 
@@ -75,7 +82,7 @@ font-size: 15px !important;
 
 .carInner:hover .carCap{
    
-transform: translateY(-60%);
+transform: translateY(-50%);
     
 }
 
