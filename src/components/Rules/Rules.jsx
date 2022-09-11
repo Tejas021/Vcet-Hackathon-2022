@@ -1,12 +1,13 @@
 
 import React from 'react'
 import styles from "./Rules.module.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Rules = () => {
   return (
-    <div className='container p-md-5 p-3 py-4 my-5'>
+    <div className='container p-md-5 p-3 py-4 my-5' id="Guidelines">
       <h1 className={`text-center text-light mb-3`}>Event Guidlines</h1>
+
 <h3 className={`${styles.textPurple} mb-3`}>Rules</h3>
 <ul className={`text-light ${styles.ruleList}`}>
 <li> The VCET Hackathon will take place on<span className={`${styles.hLight}`}> 1st & 2nd October 2021.</span> </li>
@@ -82,6 +83,7 @@ const Rules = () => {
 <button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-toggle="modal" data-bs-target="#NEFT">NEFT</button>
 <button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2 px-4`} data-bs-toggle="modal" data-bs-target="#UPI">UPI</button>
 </div>
+
     </div>
   )
 }
