@@ -6,7 +6,7 @@ import silver from "../../assets/prizes/silver.png"
 
 const Prizes = () => {
     return (
-        <div className="prizes-bg">
+        <div className="prizes-bg" id="Prizes">
             <h1 class="prize-text">PRIZES</h1>
             <div className="prize-row">
                 <div className='prize-box'>

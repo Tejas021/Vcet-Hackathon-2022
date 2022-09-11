@@ -54,12 +54,13 @@
     height: 350px;
     background-color: rgb(17, 31, 51);
     color: white;
-    border-bottom: 1px solid #7A2BAA;
+    border-bottom: 1px solid rgb(17, 31, 51);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    scrollbar-color:  rgb(17, 31, 51);
+    scroll-behavior: smooth;
     overflow: auto;
     padding: 20px;
- 
 }
 
 .main{
@@ -83,8 +84,8 @@
     font-size: 20px;
     color: #0000;
     background:
-        linear-gradient(-90deg, #A36CE0 1px, #0000 0) 10px 0,
-        linear-gradient(#A36CE0 0 0) 0 0;
+        linear-gradient(-90deg, #11cdef 1px, #0000 0) 10px 0,
+        linear-gradient(#11cdef 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 200%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
@@ -93,6 +94,7 @@
         b .7s infinite steps(1),
         t calc(var(--n)*.100s) steps(var(--n)) forwards;
         --n: 2000;
+        animation-iteration-count: infinite;
 }
 
 @keyframes t {

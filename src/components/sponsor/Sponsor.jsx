@@ -2,12 +2,10 @@ import React from 'react'
 import "./sponsor.css"
 function Sponsor() {
     return (
-        <div> 
-        
-        <div className="main-container">
 
+        <div className="main-container" id="Sponsors">
 
-<h1 className='text-center text-light mb-3 mb-md-5'>Previous Sponsors</h1>
+            <h1 className='text-center text-light mb-3 mb-md-5'>Previous Sponsors</h1>
             <div className="spons-cont grid" id="spons-cont">
                 <div className="t1 h2">Title Sponsor</div>
                 <a href="https://deardigital.be/" className="title-spons sponsor-card" target="_blank">
@@ -55,7 +53,6 @@ function Sponsor() {
                     <img src="src/assets/sponsors/" alt="" />
                 </a>
             </div>
-        </div>
         </div>
     )
 }

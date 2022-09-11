@@ -20,7 +20,7 @@ const Timer = () => {
     // sec_dot.style.transform = `rotate(${s*6}deg)`;
 
 
-    const countDownDate = new Date("September 10,2022 01:00:00 ").getTime();
+    const countDownDate = new Date("October 7,2022 08:00:00 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();

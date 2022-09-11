@@ -20,7 +20,7 @@ import Timeline from '../../components/Timeline/Timeline'
 
 const Home = () => {
   return (
-    <div>
+    <div id="Home">
 
 
       <Navbar/>

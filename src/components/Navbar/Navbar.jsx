@@ -20,22 +20,28 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#Home">Home</a>
                         </li>
                         <li style={{ borderBottom: '1px solid white' }} className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#About">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#Prizes">Prizes</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#Sponsors">Sponsors</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#Guidelines">Guidelines</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " aria-current="page" href="#">Home</a>
+                            <a className="nav-link " aria-current="page" href="#Gallery">Gallery</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link " aria-current="page" href="#FAQ">FAQ</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link " aria-current="page" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
