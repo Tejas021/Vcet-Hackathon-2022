@@ -1,0 +1,90 @@
+.gal{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   padding: 50px;
+ background-image:linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    #800080a0 55%,
+    #800080a0 45%,
+    rgba(0, 0, 0, 1) 100%
+  ), url("../../assets/backgrounds/space.jpg");
+  background-attachment: fixed;
+}
+
+.carInner{
+    width: 750px;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-box-shadow:0 0 20px #200878; 
+-moz-box-shadow: 0 0 20px #200878; 
+box-shadow:0 0 20px #200878;
+}
+
+.carInner img{
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+.carInner:hover .carImage{
+    opacity: 0.4;
+
+    
+}
+
+.carCap{
+    display:none;
+
+}
+
+.carInner:hover .carCap{
+    display: block;
+    top: 50%;
+transform: translateY(-30%);
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+
+    .gal{
+        padding: 20px 10px;
+        height: 50vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     
+     .carInner{
+         width: 95vw;
+      
+     }
+
+
+     
+.carInner img{
+    height: 250px;
+ 
+}
+
+.carCap h5 {
+font-size: 15px !important;  
+}
+
+.carCap p{
+    font-size: 10px !important;  
+}
+
+.carInner:hover .carCap{
+   
+transform: translateY(-50%);
+    
+}
+
+
+  }
