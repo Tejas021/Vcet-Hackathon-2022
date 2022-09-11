@@ -51,15 +51,60 @@
     font-weight: 700;
 }
 
-@media screen and (max-width:992px) {
-    .prize-row{
-        display: block;
-    }
+.first-prize{
+    height: 290px;
+    width: 190px;
+}
+
+@media (min-width:716px) and (max-width:992px) {
+
     .prize-box{
-        margin: 4% auto;
+        height: 300px;
+        width: 200px;
     }
 
-    .prizes-bg{
-        padding:15px
+    .prize-amount,.prize-position{
+        font-size: 1.2rem;
+    }
+
+    .first-prize{
+        height: 185px;
+        margin-bottom: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width:715px) {
+    .prize-box{
+        height: 250px;
+        width: 200px;
+    }
+
+    .first-prize{
+        height: 160px;
+        width: 150px;
+    }
+
+    .prize-amount,.prize-position{
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media screen and (max-width:660px) {
+    .prize-box{
+        height: 200px;
+        max-width: 160px;
+    }
+
+    .first-prize{
+        height: 110px;
+        width: 100px;
+    }
+
+    .prize-amount,.prize-position{
+        font-size: 0.9rem;
     }
 }
