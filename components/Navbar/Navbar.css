@@ -1,0 +1,23 @@
+.navbar{
+    height: 85px !important;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.scrolled{
+    background-color: #131519 !important;
+}
+
+
+.logo{
+    height: 70px;
+    width: 175px;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7A2BAA !important;
+}

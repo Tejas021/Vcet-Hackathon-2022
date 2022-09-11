@@ -46,6 +46,7 @@
     width: 100%;
     /* border: 1px solid #ddd; */
     border-radius: 4px;
+    height: 100%;
     /* max-width: 12.5rem; */
 }
 
@@ -134,6 +135,17 @@
 .footer .copyright .content {
     text-align: center;
     color: var(--light);
+}
+
+.footer{
+    background:#272727
+}
+
+.copyright{
+    text-align: center;
+    background: #121212;
+    color: var(--light);
+    padding:10px;
 }
 
 @media (max-width: 1100px) {

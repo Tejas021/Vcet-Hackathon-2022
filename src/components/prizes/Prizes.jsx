@@ -6,11 +6,11 @@ import silver from "../../assets/prizes/silver.png"
 
 const Prizes = () => {
     return (
-        <div className="prizes-bg">
-            <h1 class="prize-text">P R I Z E S</h1>
+        <div className="prizes-bg" id="Prizes">
+            <h1 class="prize-text">PRIZES</h1>
             <div className="prize-row">
                 <div className='prize-box'>
-                    <img className="trophy" style={{height:'290px',width:'190px'}} src={gold} alt="" />
+                    <img className="trophy first-prize" src={gold} alt="" />
                     <h3 className='prize-position'>First Prize</h3>
                     <h4 className='prize-amount'>250000</h4>
                 </div>

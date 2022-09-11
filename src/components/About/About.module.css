@@ -1,8 +1,16 @@
 .AboutBox {
     width: fit-content;
     height: fit-content;
-    margin-left: 150px;
+  
     margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.AboutParent{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .AboutBoxTopBar {
@@ -10,56 +18,75 @@
     padding: 5px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    margin-left: 550px;
-
+  
+    padding: 6px;
 }
 
 .reddot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: red;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 5px;
 }
 
 .yellowdot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: yellow;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 10px;
 }
 
 .greendot {
-    height: 25px;
-    width: 25px;
+    height: 15px;
+    width: 15px;
     background-color: green;
     border-radius: 50%;
     display: inline-block;
+    margin-left: 10px;
 }
 
 .AboutBoxBody {
-    width: 750px;
+    width: 700px;
     height: 350px;
-    background-color: #7A2BAA;
+    background-color: rgb(17, 31, 51);
     color: white;
-    border-bottom: 1px solid #ccc;
-    /* border-radius: 5px 5px 0 0; */
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid rgb(17, 31, 51);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    scrollbar-color:  rgb(17, 31, 51);
+    scroll-behavior: smooth;
     overflow: auto;
-    padding: 30px;
-    margin-left: 550px;
+    padding: 20px;
+
 }
 
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 8px;
+    margin-left: 0px;
+    font-size: 20px;
+    color: grey;
+}
 
 .type {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #0000;
     background:
-        linear-gradient(-90deg, #180828 1px, #0000 0) 10px 0,
-        linear-gradient(#180828 0 0) 0 0;
+        linear-gradient(-90deg, #11cdef 1px, #0000 0) 10px 0,
+        linear-gradient(#11cdef 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 200%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
@@ -68,6 +95,7 @@
         b .7s infinite steps(1),
         t calc(var(--n)*.100s) steps(var(--n)) forwards;
         --n: 2000;
+        animation-iteration-count: infinite;
 }
 
 @keyframes t {
@@ -82,3 +110,27 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .AboutBox {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .AboutBoxTopBar {
+        margin-left: 0px;
+    }
+
+    .AboutBoxBody {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .AboutParent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

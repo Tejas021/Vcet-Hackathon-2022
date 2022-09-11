@@ -1,9 +1,13 @@
+
 import React from 'react'
 import styles from "./Rules.module.css"
+import { Link } from "react-router-dom"
+
 const Rules = () => {
   return (
-    <div className='container p-md-5 p-2 py-4'>
-      <h1 className={`text-center ${styles.textBlue} mb-3`}>Event Guidlines</h1>
+    <div className='container p-md-5 p-3 py-4 my-5' id="Guidelines">
+      <h1 className={`text-center text-light mb-3`}>Event Guidlines</h1>
+
 <h3 className={`${styles.textPurple} mb-3`}>Rules</h3>
 <ul className={`text-light ${styles.ruleList}`}>
 <li> The VCET Hackathon will take place on<span className={`${styles.hLight}`}> 1st & 2nd October 2021.</span> </li>
@@ -19,6 +23,7 @@ const Rules = () => {
 
 </ul>
 
+<button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}><Link to="/register" className={`${styles.Link}`}>REGISTER NOW</Link></button>
 
 <h3 className={`${styles.textPurple} mb-3`}>Registration</h3>
 
@@ -35,6 +40,50 @@ const Rules = () => {
 <li> Further details will be provided in email.</li>
 <li> Following are the details of payment.</li>
 </ul>
+
+
+
+<div class="modal fade  text-light" id="NEFT" tabindex="-1" aria-labelledby="NEFT" aria-hidden="true">
+  <div class="modal-dialog " >
+    <div class="modal-content a" style={{color:"#7A2BAA",background:"#180828"}}>
+      <div class="modal-header ">
+        <h5 class="modal-title " id="NEFT">NEFT Details</h5>
+       
+      </div>
+      <div class="modal-body" >
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  text-light" id="UPI" tabindex="-1" aria-labelledby="UPI" aria-hidden="true">
+  <div class="modal-dialog " >
+    <div class="modal-content " style={{color:"#7A2BAA",background:"#180828"}}>
+      <div class="modal-header ">
+        <h5 class="modal-title " id="UPI">UPI Details</h5>
+       
+      </div>
+      <div class="modal-body" >
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+<button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-toggle="modal" data-bs-target="#NEFT">NEFT</button>
+<button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2 px-4`} data-bs-toggle="modal" data-bs-target="#UPI">UPI</button>
+</div>
+
     </div>
   )
 }
