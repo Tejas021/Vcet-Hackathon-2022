@@ -15,6 +15,7 @@ import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
 import Prizes from '../../components/prizes/Prizes'
 import Timeline from '../../components/Timeline/Timeline'
+import ProblemStatements from '../../components/ProblemStatements/ProblemStatements'
 
 
 
@@ -23,19 +24,19 @@ const Home = () => {
     <div id="Home">
 
 
-      <Navbar/>
-      <Landing/>
-      <About/>
-      <Timer/>
-      <Prizes/>
-      <Sponsor/>
-      <Timeline/>
-      <Rules/>
-      <Gallery/>
-      <Faq/>
-
-      <Contact/>
-      <Footer/>
+      <Navbar />
+      <Landing />
+      <About />
+      <Timer />
+      <ProblemStatements />
+      <Prizes />
+      <Sponsor />
+      <Timeline />
+      <Rules />
+      <Gallery />
+      <Faq />
+      <Contact />
+      <Footer />
 
     </div>
   )
