@@ -13,11 +13,11 @@ const Form = () => {
     <>
       <Navbar />
       <div className="form-main-container marginal">
-        <h1>Registration</h1>
-        <hr/>
-        <h3>Problem Statement Selection</h3>
-        <div className="problem-statement-container grid">
-            <div className="problem1-container blur-container grid">
+        <h1 className="form-h1">Registration</h1>
+        <hr className="form-hr"/>
+        <h3 className="form-h3">Problem Statement Selection</h3>
+        <div className="problem-statement-container form-grid">
+            <div className="problem1-container blur-container form-grid">
                 <div className="form-heading">
                     AI/ML
                 </div><br/>
@@ -38,7 +38,7 @@ const Form = () => {
                     <option className="form-control" value="">Preference 5</option>
                 </select>
             </div>
-            <div className="problem2-container blur-container grid">
+            <div className="problem2-container blur-container form-grid">
                 <div className="form-heading">
                     Web/App Devlopment
                 </div><br/>
@@ -59,7 +59,7 @@ const Form = () => {
                     <option className="form-control" value="">Preference 5</option>
                 </select>
             </div>
-            <div className="problem3-container blur-container grid">
+            <div className="problem3-container blur-container form-grid">
                 <div className="form-heading">
                     Cyber Security
                 </div><br />
@@ -81,8 +81,8 @@ const Form = () => {
                 </select>
             </div>
         </div>
-        <hr/><br/>
-        <h3>Team Details</h3>
+        <hr className="form-hr"/><br/>
+        <h3 className="form-h3">Team Details</h3>
         <div className="form-main-container form-grid">
           <div className="team-leader-container">
             <div className="details-container form-grid">

@@ -26,13 +26,13 @@
     --c5: #bf87ff;
 }
 
-.grid,.form-grid {
+.form-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-gap: 1.5vmin;
 }
 
-h1 {
+.form-h1 {
     text-align: center;
     color: #bf87ff;
     font-weight: 800;
@@ -40,23 +40,15 @@ h1 {
     text-shadow: 0 0 1vmin rgba(0, 0, 0, 0.516);
     font-size: 60px;
 }
-h3{
+.form-h3{
     text-align: center;
     color: #bf87ff;
     font-size: 36px;
     font-weight: 400;
     text-shadow: 0 0 3px black;
 }
-hr{
+.form-hr{
     border-color: black;
-}
-body {
-    width: 100vw;
-    /* height: 100vh;  */
-    overflow: overlay;
-    background-color: #180828;
-
-    /* background-color: var(--c3); */
 }
 
 .marginal{
@@ -65,13 +57,11 @@ body {
 
 .form-main-container {
     width: 100vw;
-    /* background-image: url("./Hack 2022/Vcet-Hackathon-2022/src/assets/backgrounds/space2.jpg"); */
     background-image: url("../../assets/backgrounds/space2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-    /* height: 100vh; */
 }
 
 .problem-statement-container {
@@ -126,7 +116,6 @@ body {
     color: rgb(209, 209, 209);
 }
 
-/* .form-control:hover, */
 .form-control:focus {
     border: 2px solid var(--c5);
     font-weight: 500;
@@ -160,10 +149,10 @@ body {
         height: auto;
         font-size: 13px;
     }
-    h1{
+    .form-h1{
         font-size: 35px;
     }
-    h3{
+    .form-h3{
         font-size: 25px;
     }
     .team-container {
