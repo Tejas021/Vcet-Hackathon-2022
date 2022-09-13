@@ -1,4 +1,5 @@
 import "./Landing.scss"
+import "./Landing.css"
 
 function Landing() {
  const handleMouseMove = (e) => {
@@ -30,6 +31,10 @@ function Landing() {
         onClick={(e)=>{handleMouseLeave(e)}}
       >
         <img id="image" />
+        <p className="college">Vidyavardhini's College of Engineering and Technology</p>
+        <p className="present">Presents</p>
+        <h1 className="hackathon"> VCET HACKATHON</h1>
+        <h1 className="moh">MULTIVERSE OF HACKING</h1>
       </div>
       </div>
     );
