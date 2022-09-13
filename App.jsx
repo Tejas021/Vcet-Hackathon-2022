@@ -9,12 +9,12 @@ import Form from './pages/Form/Form'
 function App() {
 
   const [success,setSuccess]=useState(false)
-
-  return (
-    <div className="App">
-
-  <Router>
   
+  return (
+
+    <div className="App">
+ 
+  <Router>
     <Routes>
     <Route path='/' element={<Home success={success}/>}/>
     <Route path='register' element={<Form setSuccess={setSuccess} />}/>

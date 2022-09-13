@@ -26,14 +26,15 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
-const register =  (data) => {
-   addDoc(collection(db, "registrations"), {
-    data: data,
-  }).then(docRef => { console.log(docRef.id) });
-
-}
+// const register = async (data) => {
+//    const res = await addDoc(collection(db, "registrations"), {
+//     data: data,
+//   }).then(docRef => { console.log(docRef.id); return docRef.id });
+//   console.log(res)
+//   return res
+// }
 
 
 export {
-  register,
+addDoc,collection,db
 }
