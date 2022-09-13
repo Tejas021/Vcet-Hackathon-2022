@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 import Styles from "./Timeline.module.css";
 import  WorkIcon from "../../assets/timeline/code.png";
 // import  SchoolIcon  from "../../assets/timeline/code.png";
@@ -22,50 +20,74 @@ function Timeline() {
   let timelineElements = [
     {
       id: 1,
-      title: "10:00 AM",
+      time: "7:30 A.M",
+      title: "Inauguration",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "Inauguration of the Hackathon Event will be done by the Chief Guest, Principal Sir & all our Faculty Members.",
+      date: "7th October 2022",
       icon: "work",
     },
     {
       id: 2,
-      title: "10:00 AM",
+      time: "8:00 A.M",
+      title: "Start Hacking into the Multiverse",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "All participants are expected to start working on their projects",
+      // date: "8th October 2022",
       icon: "work",
     },
     {
       id: 3,
-      title: "10:00 AM",
+      time: "5:00 P.M",
+      title: "First Jury Round",
       description:
-        "AssLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "Participants are expected to explain their progress in work till the first jury round as well as answer the Jury’s questions.",
+      // date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 4,
-      title: "10:00 AM",
+      time: "8:00 A.M",
+      title: "Second Jury Round",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "Teams are expected to complete 60% of their work and explain the further implementation of their project.",
+      date: "8th October 2022",
       icon: "work",
     },
     {
       id: 5,
-      title: "10:00 AM",
+      time: "2:00 P.M",
+      title: "Coding Ends & Judging Round Begins",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "Participants should stop coding and prepare for final presentatation.",
+      // date: "Vcet Hackathon",
       icon: "work",
     },
     {
       id: 6,
-      title: "10:00 AM",
+      time: "4:00 P.M",
+      title: "Announcements of Finalists",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "Vcet Hackathon",
+        "Finalist teams will be declared which will proceed for Pitching Round.",
+      // date: "Vcet Hackathon",
+      icon: "work",
+    },
+    {
+      id: 7,
+      time: "4:00 P.M",
+      title: "Pitching Round Begins",
+      description:
+        "Teams are required to explain their project with the help of a PowerPoint presentation and demonstrate the same.",
+      // date: "Vcet Hackathon",
+      icon: "work",
+    },
+    {
+      id: 8,
+      time: "6:00 P.M",
+      title: "Announcement of Winners",
+      description:
+        "Winners will be announced.",
+      // date: "Vcet Hackathon",
       icon: "work",
     },
   ];
@@ -90,6 +112,7 @@ function Timeline() {
               icon={ < img src={WorkIcon} className={Styles.image} />}
               // iconClassName={Styles.imgicon}
             >
+              <p>{element.time}</p>
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
