@@ -31,7 +31,7 @@
     letter-spacing: 1.8px;
     text-shadow: 0 0 1vmin rgba(0, 0, 0, 0.516);
     font-size: 60px;
-    font-family: 'Scarlex';
+    /* font-family: 'Scarlex'; */
 }
 .form-h3{
     text-align: center;
@@ -130,6 +130,11 @@
     background: rgba(0, 0, 0, 0.362);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 0.5vmin 0vh;
+}
+
+.bgPurple{
+    background-color: #A36CE0!important;
+    margin: 2%;
 }
 
 @media only screen and (max-width: 600px) {
