@@ -20,7 +20,7 @@ const Prizes = () => {
                     <h4 className='prize-amount'>250000</h4>
                 </div>
             </div>
-            <div className="prize-row">
+            <div className="prize-row row-2">
                 <div className='prize-box'>
                     <img className="trophy" src={copper} alt="" />
                     <h3 className='prize-position'>First Prize</h3>

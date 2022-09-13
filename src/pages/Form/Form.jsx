@@ -2,14 +2,24 @@ import React from 'react'
 import { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './Form.css'
+import { register } from '../../firebase'
 
 
 const Form = () => {
-  const [data, setData] = useState({ PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "", PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "", PB3Tech: "", PB3Pref: "", TName: "", TLName: "", TLCollege: "", TLCourseYear: "", TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "", TM1Name: "", TM1College: "", TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "", TM2Name: "", TM2College: "", TM2CourseYear: "", TM2Mail: "", TM2Phone: "", TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "", TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "" })
+  const [data, setData] = useState({
+    PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "",
+    PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "", 
+    PB3Tech: "", PB3Pref: "", TName: "", TLName: "", TLCollege: "", TLCourseYear: "", 
+    TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "", TM1Name: "", TM1College: "", 
+    TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "", 
+    TM2Name: "", TM2College: "", TM2CourseYear: "", TM2Mail: "", TM2Phone: "", 
+    TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "", 
+    TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",
+  })
   const submitInfo = (e) => {
     e.preventDefault();
     console.log(data);
-
+    register(data);
   }
   return (
     <>
@@ -23,28 +33,31 @@ const Form = () => {
             <div className="form-heading">
               AI/ML
             </div><br />
-            <select className="form-control " name="" id="">
+            <select className="form-control" name="AI" id="" onChange={(e)=>setData({...data,PB1Name:e.target.value})}>
               <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="">System Vulnerability using AI/ML</option>
-              <option className="form-control" value="">Metadata-farmer assistance</option>
-              <option className="form-control" value="">Recommendation for career/resume building</option>
+              <option className="form-control" value="System Vulnerability using AI/ML">System Vulnerability using AI/ML</option>
+              <option className="form-control" value="Metadata-farmer assistance">Metadata-farmer assistance</option>
+              <option className="form-control" value="Recommendation for career/resume building">Recommendation for career/resume building</option>
             </select>
-            <textarea className="form-control" name="" id="" cols="" rows="" value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
+            <textarea 
+            className="form-control" name="" id="" cols="" rows="" value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">Preference 1</option>
-              <option className="form-control" value="">Preference 2</option>
-              <option className="form-control" value="">Preference 3</option>
-              <option className="form-control" value="">Preference 4</option>
-              <option className="form-control" value="">Preference 5</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+              
+              
             </select>
           </div>
           <div className="problem2-container blur-container form-grid">
             <div className="form-heading">
               Web/App Devlopment
             </div><br />
-            <select className="form-control " name="" id="">
+            <select className="form-control "
+            onChange={(e)=>setData({...data,PB2Name:e.target.value})}
+             name="" id="">
               <option className="form-control" selected disabled>Problem Statement</option>
               <option className="form-control" value="">Testing tool for phone apps.</option>
               <option className="form-control" value="">Bus Tracking System</option>
@@ -54,18 +67,20 @@ const Form = () => {
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">Preference 1</option>
-              <option className="form-control" value="">Preference 2</option>
-              <option className="form-control" value="">Preference 3</option>
-              <option className="form-control" value="">Preference 4</option>
-              <option className="form-control" value="">Preference 5</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+              
+              
             </select>
           </div>
           <div className="problem3-container blur-container form-grid">
             <div className="form-heading">
               Cyber Security
             </div><br />
-            <select className="form-control " name="" id="">
+            <select className="form-control "
+           onChange={(e)=>setData({...data,PB3Name:e.target.value})}
+             name="" id="">
               <option className="form-control" selected disabled>Problem Statement</option>
               <option className="form-control" value="">Call Tracking for VOIP</option>
               <option className="form-control" value="">Network Security Scanner</option>
@@ -75,11 +90,11 @@ const Form = () => {
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">Preference 1</option>
-              <option className="form-control" value="">Preference 2</option>
-              <option className="form-control" value="">Preference 3</option>
-              <option className="form-control" value="">Preference 4</option>
-              <option className="form-control" value="">Preference 5</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+              
+              
             </select>
           </div>
         </div>
