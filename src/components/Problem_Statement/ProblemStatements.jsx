@@ -13,30 +13,30 @@ function ProblemStatements() {
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Cyber_PS1.png" />
+                                <img src="../src/assets/problem_statements/Cyber_PS1.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_Cyber_PS1.jpg" />
+                                <img src="../src/assets/problem_statements/CardFlip_Cyber_PS1.jpg" />
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Cyber_PS2.png" />
+                                <img src="../src/assets/problem_statements/Cyber_PS2.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_Cyber_PS2.jpg" />
+                                <img src="../src/assets/problem_statements/CardFlip_Cyber_PS2.jpg" />
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Cyber_PS3.png" />
+                                <img src="../src/assets/problem_statements/Cyber_PS3.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_Cyber_PS3.jpg" />
+                                <img src="../src/assets/problem_statements/CardFlip_Cyber_PS3.jpg" />
                             </div>
                         </div>
                     </div>
@@ -47,30 +47,30 @@ function ProblemStatements() {
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/AIML_PS1.png" />
+                                <img src="../src/assets/problem_statements/AIML_PS1.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_AIMLPS1.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_AIMLPS1.jpg"/>
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/AIML_PS2.png" />
+                                <img src="../src/assets/problem_statements/AIML_PS2.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_AIMLPS2.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_AIMLPS1.jpg"/>
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/AIML_PS3.png" />
+                                <img src="../src/assets/problem_statements/AIML_PS3.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_AIMLPS3.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_AIMLPS3.jpg"/>
                             </div>
                         </div>
                     </div>
@@ -81,30 +81,30 @@ function ProblemStatements() {
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Web_PS1.png" />
+                                <img src="../src/assets/problem_statements/Web_PS1.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_WEB_PS1.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_WEB_PS1.jpg"/>
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Web_PS2.png" />
+                                <img src="../src/assets/problem_statements/Web_PS2.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_WEB_PS2.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_WEB_PS2.jpg"/>
                             </div>
                         </div>
                     </div>
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/Web_PS3.png" />
+                                <img src="../src/assets/problem_statements/Web_PS3.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/problem_statements/CardFlip_WEB_PS3.jpg"/>
+                                <img src="../src/assets/problem_statements/CardFlip_WEB_PS3.jpg"/>
                             </div>
                         </div>
                     </div>
