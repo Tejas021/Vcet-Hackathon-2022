@@ -1,11 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import { useNavigate } from 'react-router-dom'
 import './Form.css'
-import { register } from '../../firebase'
+import { addDoc,collection,db } from '../../firebase'
 
 
-const Form = () => {
+
+const Form = ({setSuccess}) => {
+
+  const navigate = useNavigate()
   const [data, setData] = useState({
     PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "",
     PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "",
@@ -16,11 +20,20 @@ const Form = () => {
     TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
     TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",
   })
-  const submitInfo = (e) => {
+  const submitInfo = async (e) => {
     e.preventDefault();
-  
-    register(data);
+    // console.log(data);
+    const res = await addDoc(collection(db, "registrations"), {
+      data: data,
+    }).then(docRef => { return docRef.id });
+    // console.log(res)
+    if(res){
+      setSuccess(true);
+      navigate("/")
+
+    }
   }
+
   return (
     <>
       <Navbar />
@@ -63,7 +76,7 @@ const Form = () => {
               <option className="form-control" value="Bus Tracking System">Bus Tracking System</option>
               <option className="form-control" value="CRM for Business"> CRM for Business </option>
             </select>
-            <textarea className="form-control" name="" id="" cols="" rows="" value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
+            <textarea  className="form-control" name="" id="" cols="" rows="" value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
