@@ -220,7 +220,7 @@ function ProblemStatements() {
 
                         </div> */}
                         <div class="modal-body" >
-                            <img src="/problem_statements/CardFlip_Web_PS1.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
+                            <img src="/problem_statements/CardFlip_WEB_PS1.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
                         </div>
                         {/* <div class="modal-footer">
                             <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
@@ -237,7 +237,7 @@ function ProblemStatements() {
 
                         </div> */}
                         <div class="modal-body" >
-                            <img src="/problem_statements/CardFlip_Web_PS2.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
+                            <img src="/problem_statements/CardFlip_WEB_PS2.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
                         </div>
                         {/* <div class="modal-footer">
                             <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
@@ -254,7 +254,7 @@ function ProblemStatements() {
 
                         </div> */}
                         <div class="modal-body" >
-                            <img src="/problem_statements/CardFlip_Web_PS3.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
+                            <img src="/problem_statements/CardFlip_WEB_PS3.jpg" alt="" srcset="" style={{ maxWidth: "100%", aspectRatio: "1/1" }} />
                         </div>
                         {/* <div class="modal-footer">
                             <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
