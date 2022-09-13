@@ -87,7 +87,7 @@ const Contact = () => {
                         <h2>For Other Queries</h2>
                         <div className={ContactCss.content2}>
                             <div className={ContactCss.contact}>
-                                <b className={ContactCss.subheading}>Siddhi Kolvankar</b>
+                                <b className={ContactCss.subheading}>Siddhi Kolwankar</b>
 
                                 <p>+91 89996 68182</p>
                             </div>
