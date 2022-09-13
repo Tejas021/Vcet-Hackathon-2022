@@ -60,9 +60,9 @@ const Form = () => {
               onChange={(e) => setData({ ...data, PB2Name: e.target.value })}
               name="" id="">
               <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="">Testing tool for phone apps.</option>
-              <option className="form-control" value="">Bus Tracking System</option>
-              <option className="form-control" value=""> CRM for Business </option>
+              <option className="form-control" value="Testing tool for phone apps.">Testing tool for phone apps.</option>
+              <option className="form-control" value="Bus Tracking System">Bus Tracking System</option>
+              <option className="form-control" value="CRM for Business"> CRM for Business </option>
             </select>
             <textarea className="form-control" name="" id="" cols="" rows="" value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
@@ -83,9 +83,9 @@ const Form = () => {
               onChange={(e) => setData({ ...data, PB3Name: e.target.value })}
               name="" id="">
               <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="">Call Tracking for VOIP</option>
-              <option className="form-control" value="">Network Security Scanner</option>
-              <option className="form-control" value="">Email monitoring</option>
+              <option className="form-control" value="Call Tracking for VOIP">Call Tracking for VOIP</option>
+              <option className="form-control" value="Network Security Scanner">Network Security Scanner</option>
+              <option className="form-control" value="Email monitoring">Email monitoring</option>
             </select>
             <textarea className="form-control" name="" id="" cols="" rows="" value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />

@@ -27,7 +27,7 @@ const Home = ({success}) => {
       <Landing/>
       <About/>
       <Timer/>
-      <Prizes/>
+    
       <Sponsor/>
       <ProblemStatements/>
       <Timeline/>
