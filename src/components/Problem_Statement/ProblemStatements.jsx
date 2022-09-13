@@ -57,7 +57,7 @@ function ProblemStatements() {
                     <div className={classnames(styles.flipCard)}>
                         <div className={classnames(styles.flipCardInner)}>
                             <div className={classnames(styles.flipCardCover)}>
-                                <img src="../../assets/problem_statements/AIML_PS2.png" />
+                                <img src="../assets/problem_statements/AIML_PS2.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
                                 <img src="../../assets/problem_statements/CardFlip_AIMLPS2.jpg"/>
