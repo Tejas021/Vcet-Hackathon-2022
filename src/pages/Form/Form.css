@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+
 
 *::-webkit-scrollbar {
     width: 7px;
@@ -30,44 +24,53 @@
     grid-gap: 1.5vmin;
 }
 
-.form-main-container h1 {
+.form-h1 {
     text-align: center;
     color: #bf87ff;
     font-weight: 800;
     letter-spacing: 1.8px;
     text-shadow: 0 0 1vmin rgba(0, 0, 0, 0.516);
     font-size: 60px;
+    /* font-family: 'Scarlex'; */
 }
-
-.form-main-container h3 {
+.form-h3{
     text-align: center;
     color: #bf87ff;
     font-size: 36px;
     font-weight: 400;
     text-shadow: 0 0 3px black;
 }
-
-hr {
+.form-hr{
     border-color: black;
 }
 
-/* body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #180828;
-    /* background-color: var(--c3); 
-} */
+.marginal{
+    margin-top: 85px;
+}
 
 .form-main-container {
     width: 100vw;
-    /* background-image: url("./Hack 2022/Vcet-Hackathon-2022/src/assets/backgrounds/space2.jpg"); */
-    /* background-image: url("./WhatsApp\ Image\ 2022-09-12\ at\ 7.36.48\ AM.jpeg"); */
     background-image: url("../../assets/backgrounds/space2.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    margin: 8vh 0 0 0;
-    /* height: 100vh; */
+    
+    
+}
+
+.problem-statement-container {
+    width: 100vw;
+}
+
+.problem-statement-container textarea {
+    max-height: none;
+    height: 150px;
+    resize: none;
+}
+
+.team-container {
+    width: 100vw;
 }
 
 .problem-statement-container {
@@ -122,7 +125,6 @@ hr {
     color: rgb(209, 209, 209);
 }
 
-/* .form-control:hover, */
 .form-control:focus {
     border: 2px solid var(--c5);
     font-weight: 500;
@@ -144,13 +146,15 @@ hr {
     box-shadow: 0 0 0.5vmin 0vh;
 }
 
-@media only screen and (max-width: 600px) {
+.bgPurple{
+    background-color: #A36CE0!important;
+    margin: 2%;
+}
 
-    .problem-statement-container,
-    .team-container {
+@media only screen and (max-width: 600px) {
+    .problem-statement-container,.team-container{
         padding: 0 2.5vw;
     }
-
     .form-heading {
         font-size: 18px;
     }
@@ -159,15 +163,12 @@ hr {
         height: auto;
         font-size: 13px;
     }
-
-    .form-main-container h1 {
+    .form-h1{
         font-size: 35px;
     }
-
-    .form-main-container h3 {
+    .form-h3{
         font-size: 25px;
     }
-
     .team-container {
         padding: 4vh 2vw;
     }
@@ -201,7 +202,6 @@ hr {
     .form-control {
         grid-column: 1/13;
     }
-
     .problem1-container,
     .problem2-container,
     .problem3-container,
@@ -212,7 +212,7 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
-
+    
     .team-container,
     .problem-statement-container {
         padding: 4vh 5vw;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import About from '../../components/About/About'
 
@@ -15,28 +15,49 @@ import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
 import Prizes from '../../components/prizes/Prizes'
 import Timeline from '../../components/Timeline/Timeline'
-import ProblemStatements from '../../components/ProblemStatements/ProblemStatements'
+import ProblemStatements from '../../components/Problem_Statement/ProblemStatements'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
+const Home = ({success}) => {
 
-const Home = () => {
+
+  useEffect(()=>{
+if(success){
+  toast.success("Registered successfully")
+}
+  },[success])
+ 
   return (
     <div id="Home">
 
 
-      <Navbar />
-      <Landing />
-      <About />
-      <Timer />
-      <ProblemStatements />
-      <Prizes />
-      <Sponsor />
-      <Timeline />
-      <Rules />
-      <Gallery />
-      <Faq />
-      <Contact />
-      <Footer />
+      <Navbar/>
+
+      <ToastContainer
+      position="bottom-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      />
+      <Landing/>
+      <About/>
+      <Timer/>
+    
+      <Sponsor/>
+      <ProblemStatements/>
+      <Timeline/>
+      <Rules/>
+      <Gallery/>
+      <Faq/>
+      <Contact/>
+      <Footer/>
 
     </div>
   )

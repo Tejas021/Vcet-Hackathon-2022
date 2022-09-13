@@ -107,4 +107,42 @@
     .prize-amount,.prize-position{
         font-size: 0.9rem;
     }
+
 }
+
+@media screen and (max-width:620px) {
+    .row-2 .prize-box{
+        height: 150px;
+        width: 150px;
+    }
+
+    .first-prize{
+        height: 110px;
+        width: 100px;
+    }
+
+    .prize-amount,.prize-position{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .prize-box{
+        height: 160px;
+        width: 150px;
+    }
+
+    .first-prize{
+        height: 80px;
+        width: 70px;
+    }
+
+    .prize-amount,.prize-position{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+}
+

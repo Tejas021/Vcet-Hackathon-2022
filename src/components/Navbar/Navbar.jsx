@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Navbar.css"
 import logo from '../../assets/logo_white_hackthon.png'
+import {Link} from "react-router-dom"
 
 function Navbar() {
 
@@ -10,18 +11,19 @@ function Navbar() {
         setIsScrolled(window.pageYOffset === 0 ? false : true);
         return () => (window.onscroll = null);
     };
-    console.log(isActive);
     return (
         <nav className={isScrolled ? "navbar scrolled navbar-expand-lg" : "navbar navbar-expand-lg"}>
             <div className="container">
-                <img className="logo" src={logo} alt="logo" />
+                <Link to="/"> <img className="logo" src={logo} alt="logo" /></Link>
+               
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item" onClick={()=>setIsActive("home")}>
-                            <a className="nav-link" style={(isActive==="home")?{color:'white'}:{}} aria-current="page" href="#Home">Home</a>
+                        <Link to={"/"} className="nav-link " style={(isActive==="home")?{color:'white'}:{}} aria-current="page" href="#Home">Home</Link> 
+                           
                         </li>
                         <li className="nav-item" onClick={()=>setIsActive("about")}>
                             <a className="nav-link" style={(isActive==="about")?{color:'white'}:{}} aria-current="page" href="#About">About</a>

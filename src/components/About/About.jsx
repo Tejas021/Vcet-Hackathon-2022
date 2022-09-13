@@ -167,7 +167,7 @@ function About() {
                                 <span>12</span>
                             </div>
                             <div className={styles.text}>
-                                <span className={styles.type}>
+                                <span className={styles.type} style={{ fontFamily: "consolas" }}>
                                     VCET Hackathon is a 30 hours Virtual Hackathon organized by Department of Information Technology of
                                     "Vidyavardhini's College of Engineering and Technology". By organizing this Hackathon, we are trying to
                                     promote a strong Programming and Product Building Culture among students that will help them develop
