@@ -23,7 +23,7 @@ const Rules = () => {
 
       </ul>
 
-      <button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}><Link to="/register" className={`${styles.Link}`}>REGISTER NOW</Link></button>
+      <Link to="/register" className={`${styles.Link}`}><button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}>REGISTER NOW</button></Link>
 
       <h3 className={`${styles.textPurple} mb-3`}>Registration</h3>
 

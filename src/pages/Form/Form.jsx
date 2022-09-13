@@ -2,10 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './Form.css'
-import { register } from '../../firebase'
+import { addDoc,collection,db } from '../../firebase'
 
 
-const Form = () => {
+const Form = ({setSuccess}) => {
   const [data, setData] = useState({
     PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "",
     PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "",
@@ -16,11 +16,18 @@ const Form = () => {
     TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
     TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",
   })
-  const submitInfo = (e) => {
+  const submitInfo = async (e) => {
     e.preventDefault();
-  
-    register(data);
+    // console.log(data);
+    const res = await addDoc(collection(db, "registrations"), {
+      data: data,
+    }).then(docRef => { return docRef.id });
+    // console.log(res)
+    if(res){
+      setSuccess(true)
+    }
   }
+
   return (
     <>
       <Navbar />
