@@ -19,7 +19,8 @@ const Form = () => {
   const submitInfo = (e) => {
     e.preventDefault();
     console.log(data);
-    register(data);
+    const done = register(data);
+    console.log(done)
   }
   return (
     <>

@@ -18,8 +18,7 @@ import Timeline from '../../components/Timeline/Timeline'
 import ProblemStatements from '../../components/Problem_Statement/ProblemStatements'
 
 
-
-const Home = () => {
+const Home = ({success}) => {
   return (
     <div id="Home">
 
@@ -35,7 +34,6 @@ const Home = () => {
       <Rules/>
       <Gallery/>
       <Faq/>
-
       <Contact/>
       <Footer/>
 

@@ -31,6 +31,7 @@ const register = async (data)=>{
     data:data,
 });
 console.log(reg)
+return reg
 }
 
 
