@@ -51,6 +51,7 @@ if(success){
       <Timer/>
   
       <Sponsor/>
+      <ProblemStatements/>
       <Timeline/>
       <Rules/>
       <Gallery/>
