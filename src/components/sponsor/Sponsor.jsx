@@ -52,8 +52,9 @@ function Sponsor() {
                 <a href="/" className="mps sponsor-card" target="_blank">
                     <img src="/sponsors/loksatta.png" alt="" />
                 </a>
-            </div >
-        </div >
+
+            </div>
+        </div>
     )
 }
 
