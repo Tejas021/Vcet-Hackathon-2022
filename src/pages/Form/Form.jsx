@@ -22,7 +22,7 @@ const Form = ({setSuccess}) => {
   })
   const submitInfo = async (e) => {
     e.preventDefault();
-    // console.log(data);
+    console.log(data);
     const res = await addDoc(collection(db, "registrations"), {
       data: data,
     }).then(docRef => { return docRef.id });
@@ -37,7 +37,7 @@ const Form = ({setSuccess}) => {
   return (
     <>
       <Navbar />
-      <div className="form-main-container marginal">
+      <form className="form-main-container marginal" onSubmit={(e)=>submitInfo(e)}>
         <h1 className="form-h1">Registration</h1>
         <hr className="form-hr" />
         <h3 className="form-h3">Problem Statement Selection</h3>
@@ -53,7 +53,7 @@ const Form = ({setSuccess}) => {
               <option className="form-control" value="Recommendation for career/resume building">Recommendation for career/resume building</option>
             </select>
             <textarea
-              className="form-control" name="" id="" cols="" rows="" value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
+              className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
@@ -76,7 +76,7 @@ const Form = ({setSuccess}) => {
               <option className="form-control" value="Bus Tracking System">Bus Tracking System</option>
               <option className="form-control" value="CRM for Business"> CRM for Business </option>
             </select>
-            <textarea  className="form-control" name="" id="" cols="" rows="" value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
+            <textarea  className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
@@ -99,7 +99,7 @@ const Form = ({setSuccess}) => {
               <option className="form-control" value="Network Security Scanner">Network Security Scanner</option>
               <option className="form-control" value="Email monitoring">Email monitoring</option>
             </select>
-            <textarea className="form-control" name="" id="" cols="" rows="" value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
+            <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="">
               <option className="form-control" selected disabled>Preference</option>
@@ -236,10 +236,10 @@ const Form = ({setSuccess}) => {
           </div>
         </div>
         <div style={{textAlign:'center'}}>
-        <button className={`btn bgPurple text-light`} type="submit" onClick={(e) => submitInfo(e)}>Submit</button>
+        <button className={`btn bgPurple text-light px-5`} style={{fontSize:"20px"}} type="submit">SUBMIT</button>
         </div>
         
-      </div>
+      </form>
     </>
   )
 }
