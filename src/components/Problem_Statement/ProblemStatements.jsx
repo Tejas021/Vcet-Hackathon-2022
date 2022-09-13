@@ -26,7 +26,7 @@ function ProblemStatements() {
                                 <img src="../../assets/problem_statements/Cyber_PS2.png" />
                             </div>
                             <div className={classnames(styles.flipCardBack)}>
-                                <img src="../../assets/prizes/gold.png" />
+                                <img src="../../assets/problem_statements/CardFlip_Cyber_PS2.jpg" />
                             </div>
                         </div>
                     </div>
