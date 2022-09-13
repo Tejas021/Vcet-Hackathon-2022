@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Navbar.css"
 import logo from '../../assets/logo_white_hackthon.png'
+import {Link} from "react-router-dom"
 
 function Navbar() {
 
@@ -21,8 +22,8 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item" onClick={()=>setIsActive("home")}>
-                            <a className="nav-link" style={(isActive==="home")?{color:'white'}:{}} aria-current="page" href="#Home">Home</a>
-                            {/* <Link to={"/"} className="nav-link " aria-current="page" >Home</Link> */}
+                        <Link to={"/"} className="nav-link " style={(isActive==="home")?{color:'white'}:{}} aria-current="page" href="#Home">Home</Link> 
+                           
                         </li>
                         <li className="nav-item" onClick={()=>setIsActive("about")}>
                             <a className="nav-link" style={(isActive==="about")?{color:'white'}:{}} aria-current="page" href="#About">About</a>
