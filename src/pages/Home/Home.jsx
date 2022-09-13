@@ -15,6 +15,7 @@ import Rules from '../../components/Rules/Rules'
 import Sponsor from '../../components/sponsor/sponsor'
 import Prizes from '../../components/prizes/Prizes'
 import Timeline from '../../components/Timeline/Timeline'
+import ProblemStatements from '../../components/Problem_Statement/ProblemStatements'
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
       <Timer/>
       <Prizes/>
       <Sponsor/>
+      <ProblemStatements/>
       <Timeline/>
       <Rules/>
       <Gallery/>

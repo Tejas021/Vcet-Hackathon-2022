@@ -10,7 +10,7 @@ const Rules = () => {
 
 <h3 className={`${styles.textPurple} mb-3`}>Rules</h3>
 <ul className={`text-light ${styles.ruleList}`}>
-<li> The VCET Hackathon will take place on<span className={`${styles.hLight}`}> 1st & 2nd October 2021.</span> </li>
+<li> The VCET Hackathon will take place on<span className={`${styles.hLight}`}> 7th & 8th October 2022.</span> </li>
 <li> A team can consist of 1 to 4 members. Every member of the team must be a student of a university or a college. A team can have members from different colleges.</li>
 <li>  Entry fees is <span className={`${styles.hLight}`}>Rs.500</span> per team.</li>
 <li> Participants are free to use open standard repositories, APIs and publically available libraries.</li>
