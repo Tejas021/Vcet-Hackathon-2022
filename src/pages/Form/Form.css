@@ -132,6 +132,11 @@
     box-shadow: 0 0 0.5vmin 0vh;
 }
 
+.bgPurple{
+    background-color: #A36CE0!important;
+    margin: 2%;
+}
+
 @media only screen and (max-width: 600px) {
     .problem-statement-container,.team-container{
         padding: 0 2.5vw;
