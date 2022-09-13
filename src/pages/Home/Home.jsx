@@ -28,7 +28,7 @@ const Home = () => {
       <Landing/>
       <About/>
       <Timer/>
-      <Prizes/>
+    
       <Sponsor/>
       <ProblemStatements/>
       <Timeline/>
