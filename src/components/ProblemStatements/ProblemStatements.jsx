@@ -5,15 +5,107 @@ function ProblemStatements() {
     return (
         <>
             <div className={classnames(styles.mainProblemStatementsContainer, styles.grid)}>
-                <div className={classnames(styles.flipCard)}>
-                    <div className={classnames(styles.flipCardInner)}>
-                        <div className={classnames(styles.flipCardFront)}>
-                            <img src="../../assets/backgrounds/space.jpg" alt="Avatar" style={{ "width": "300px", "height": "300px" }} />
+                <br />
+                <div className={styles.heading1}>Problem Statements</div>
+                <br />
+                <div className={styles.heading3}>Cyber Security</div>
+                <div className={styles.probsContainer}>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
                         </div>
-                        <div className={classnames(styles.flipCardBack)}>
-                            <h1>John Doe</h1>
-                            <p>Architect and Engineer</p>
-                            <p>We love that guy</p>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div className={styles.heading3}>Artificial Intelligence & Machine Learning</div>
+                <div className={styles.probsContainer}>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div className={styles.heading3}>Web & App Development</div>
+                <div className={styles.probsContainer}>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={classnames(styles.flipCard)}>
+                        <div className={classnames(styles.flipCardInner)}>
+                            <div className={classnames(styles.flipCardCover)}>
+                                <img src="../../assets/react.svg" />
+                            </div>
+                            <div className={classnames(styles.flipCardBack)}>
+                                <img src="../../assets/prizes/gold.png" />
+                            </div>
                         </div>
                     </div>
                 </div>
