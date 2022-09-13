@@ -224,7 +224,7 @@ const Form = () => {
           </div>
         </div>
         <div style={{textAlign:'center'}}>
-        <button className={`btn bgPurple text-light`} type="submit" onClick={() => submitInfo()}>Submit</button>
+        <button className={`btn bgPurple text-light`} type="submit" onClick={(e) => submitInfo(e)}>Submit</button>
         </div>
         
       </div>
