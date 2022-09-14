@@ -3,10 +3,12 @@ import styles from "./Landing.module.css";
 const Landing = () => {
   return (
     <div className={`d-flex flex-column justify-content-center ${styles.LandingContainer}`} id="Landing">
-      <h1 >VidyaVardhini's College Of Engineering and Technolgy </h1>
-      <p className='text-center text-light'>presents</p>
-      <h1 className='fw-bold'>VCET HACKATHON</h1>
-      <h3 className='text-center text-light fw-bold'>Multiverse of Coding</h3>
+      <div className={styles.landingContainer}>
+        <h1 className={styles.collegeName}>Vidyavardhini's College Of Engineering and Technology </h1>
+        <p className={`text-center mt-4 ${styles.themeName}`} style={{color:"white"}}><h4>presents</h4></p>
+        <h1 className={styles.mainHeading}>VCET HACKATHON</h1>
+        <h3 className={styles.themeName}>Multiverse of Hacking</h3>
+      </div>
     </div>
   )
 }
