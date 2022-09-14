@@ -10,7 +10,7 @@ function Landing() {
     // Invert values
     x = x - x * 2;
     y = y - y * 2;
-    document.documentElement.style.setProperty("--scale", 1.6);
+    document.documentElement.style.setProperty("--scale", 1.45);
     document.documentElement.style.setProperty("--x", x / 2 + "px");
 
     document.documentElement.style.setProperty("--y", y / 2 + "px");
