@@ -48,7 +48,7 @@ const Rules = () => {
             <div class="modal-header ">
               <h5 class="modal-title " id="NEFT">NEFT Details</h5>
             </div>
-            <div class="modal-body" style={{color : '#fff', letterSpacing:'1px'}}>
+            <div class="modal-body" style={{ color: '#fff', letterSpacing: '1px' }}>
               <h5>Account Name:  Vatsal Harish Shah</h5>
               <h5>Branch:  Dahisar East</h5>
               <h5>A/c no - 17910110011454</h5>
@@ -72,10 +72,12 @@ const Rules = () => {
             </div>
             <div class="modal-body" >
               <h5>You can Scan the Qr Code Given Below:</h5>
+
               <img  src="/Payment_QR.png" alt="qrcode" className={`${styles.qrcode}`}/>
               <br />  
+
               <h5>Or Pay On the following UPI-ID</h5>
-              <h6 style={{color: '#fff'}}>vatsalshah471@okhdfcbank</h6>
+              <h6 style={{ color: '#fff' }}>vatsalshah471@okhdfcbank</h6>
             </div>
             <div class="modal-footer">
               <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
