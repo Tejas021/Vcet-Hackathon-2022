@@ -43,6 +43,16 @@
     text-shadow: 0 0 5vmin var(--c2);
 }
 
+.presents {
+    background-color: #00000000;
+    text-align: center;
+    font-size: 4vmax;
+    letter-spacing: 0.6vmin;
+    font-weight: 700;
+    color: rgb(219, 156, 255);
+    text-shadow: 0 0 5vmin var(--c2);
+}
+
 .collegeName {
     background-color: #00000000;
     text-align: center;
@@ -51,14 +61,21 @@
     color: var(--c5);
     text-shadow: 0 0 3vmin black;
 }
-@media screen and (width:600px) {
-    .mainHeading{
+
+@media only screen and (max-width:600px) {
+    .mainHeading {
         font-size: 45px;
     }
-    .collegeName{
-        font-size: 18px;
+
+    .collegeName {
+        font-size: 20px;
     }
-    .themeName{
+
+    .themeName {
         font-size: 32px;
+    }
+
+    .presents {
+        font-size: 15px;
     }
 }
