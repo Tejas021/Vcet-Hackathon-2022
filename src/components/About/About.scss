@@ -168,8 +168,12 @@
   }
 }
 
-@media screen {
+@media screen and (max-width:768px){
   #galaxy {
     width: 80%;
+  }
+
+  .container1{
+    display: none;
   }
 }

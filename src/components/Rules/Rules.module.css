@@ -1,45 +1,55 @@
-.textPurple{
+.textPurple {
     color: #7A2BAA;
 }
 
-.textBlue{
+.textBlue {
     color: #A36CE0;
 }
 
-.bgBlue{
+.bgBlue {
     background-color: #A36CE0;
-}
-
-.Link{
     text-decoration: none;
     color: aliceblue;
 }
 
-.Link:hover{
+.Link {
     text-decoration: none;
     color: aliceblue;
 }
 
-.hLight{
+.Link:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hLight {
     color: #A36CE0;
     font-weight: 350%;
 }
 
-.ruleList{
+.ruleList {
     list-style-type: "🚀 ";
     text-align: justify;
 }
 
-.ruleList li{
+.ruleList li {
 
     margin: 10px;
 }
 
 @media only screen and (max-width: 420px) {
-    
-.ruleList li{
 
-    margin: 5px;
+    .ruleList li {
+
+        margin: 5px;
+    }
+
 }
 
+img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
