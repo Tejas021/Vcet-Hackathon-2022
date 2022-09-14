@@ -3,11 +3,11 @@ import { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import { useNavigate } from 'react-router-dom'
 import './Form.css'
-import { addDoc,collection,db } from '../../firebase'
+import { addDoc, collection, db } from '../../firebase'
 
 
 
-const Form = ({setSuccess}) => {
+const Form = ({ setSuccess }) => {
 
   const navigate = useNavigate()
   const [data, setData] = useState({
@@ -27,7 +27,7 @@ const Form = ({setSuccess}) => {
       data: data,
     }).then(docRef => { return docRef.id });
     // console.log(res)
-    if(res){
+    if (res) {
       setSuccess(true);
       navigate("/")
 
@@ -37,81 +37,10 @@ const Form = ({setSuccess}) => {
   return (
     <>
       <Navbar />
-      <form className="form-main-container marginal" onSubmit={(e)=>submitInfo(e)}>
+      <form className="form-main-container marginal" onSubmit={(e) => submitInfo(e)}>
+
         <h1 className="form-h1">Registration</h1>
         <hr className="form-hr" />
-        <h3 className="form-h3">Problem Statement Selection</h3>
-        <div className="problem-statement-container form-grid">
-          <div className="problem1-container blur-container form-grid">
-            <div className="form-heading">
-              AI/ML
-            </div><br />
-            <select className="form-control" name="AI" id="" onChange={(e) => setData({ ...data, PB1Name: e.target.value })}>
-              <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="System Vulnerability using AI/ML">System Vulnerability using AI/ML</option>
-              <option className="form-control" value="Metadata-farmer assistance">Metadata-farmer assistance</option>
-              <option className="form-control" value="Recommendation for career/resume building">Recommendation for career/resume building</option>
-            </select>
-            <textarea
-              className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
-            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="">
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">1</option>
-              <option className="form-control" value="">2</option>
-              <option className="form-control" value="">3</option>
-
-
-            </select>
-          </div>
-          <div className="problem2-container blur-container form-grid">
-            <div className="form-heading">
-              Web/App Devlopment
-            </div><br />
-            <select className="form-control "
-              onChange={(e) => setData({ ...data, PB2Name: e.target.value })}
-              name="" id="">
-              <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="Testing tool for phone apps.">Testing tool for phone apps.</option>
-              <option className="form-control" value="Bus Tracking System">Bus Tracking System</option>
-              <option className="form-control" value="CRM for Business"> CRM for Business </option>
-            </select>
-            <textarea  className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
-            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="">
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">1</option>
-              <option className="form-control" value="">2</option>
-              <option className="form-control" value="">3</option>
-
-
-            </select>
-          </div>
-          <div className="problem3-container blur-container form-grid">
-            <div className="form-heading">
-              Cyber Security
-            </div><br />
-            <select className="form-control "
-              onChange={(e) => setData({ ...data, PB3Name: e.target.value })}
-              name="" id="">
-              <option className="form-control" selected disabled>Problem Statement</option>
-              <option className="form-control" value="Call Tracking for VOIP">Call Tracking for VOIP</option>
-              <option className="form-control" value="Network Security Scanner">Network Security Scanner</option>
-              <option className="form-control" value="Email monitoring">Email monitoring</option>
-            </select>
-            <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
-            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="">
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="">1</option>
-              <option className="form-control" value="">2</option>
-              <option className="form-control" value="">3</option>
-
-
-            </select>
-          </div>
-        </div>
-        <hr className="form-hr" /><br />
         <h3 className="form-h3">Team Details</h3>
         <div className="form-main-container form-grid">
           <div className="team-leader-container">
@@ -235,10 +164,83 @@ const Form = ({setSuccess}) => {
             </div>
           </div>
         </div>
-        <div style={{textAlign:'center'}}>
-        <button className={`btn bgPurple text-light px-5`} style={{fontSize:"20px"}} type="submit">SUBMIT</button>
+        <hr className="form-hr" /><br />
+
+        <h3 className="form-h3">Problem Statement Selection</h3>
+        <div className="problem-statement-container form-grid">
+          <div className="problem1-container blur-container form-grid">
+            <div className="form-heading">
+              AI/ML
+            </div><br />
+            <select className="form-control" name="AI" id="" onChange={(e) => setData({ ...data, PB1Name: e.target.value })}>
+              <option className="form-control" selected disabled>Problem Statement</option>
+              <option className="form-control" value="System Vulnerability using AI/ML">System Vulnerability using AI/ML</option>
+              <option className="form-control" value="Metadata-farmer assistance">Metadata-farmer assistance</option>
+              <option className="form-control" value="Recommendation for career/resume building">Recommendation for career/resume building</option>
+            </select>
+            <textarea
+              className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
+            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
+            <select className="form-control " name="" id="">
+              <option className="form-control" selected disabled>Preference</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+
+
+            </select>
+          </div>
+          <div className="problem2-container blur-container form-grid">
+            <div className="form-heading">
+              Web/App Devlopment
+            </div><br />
+            <select className="form-control "
+              onChange={(e) => setData({ ...data, PB2Name: e.target.value })}
+              name="" id="">
+              <option className="form-control" selected disabled>Problem Statement</option>
+              <option className="form-control" value="Testing tool for phone apps.">Testing tool for phone apps.</option>
+              <option className="form-control" value="Bus Tracking System">Bus Tracking System</option>
+              <option className="form-control" value="CRM for Business"> CRM for Business </option>
+            </select>
+            <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
+            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
+            <select className="form-control " name="" id="">
+              <option className="form-control" selected disabled>Preference</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+
+
+            </select>
+          </div>
+          <div className="problem3-container blur-container form-grid">
+            <div className="form-heading">
+              Cyber Security
+            </div><br />
+            <select className="form-control "
+              onChange={(e) => setData({ ...data, PB3Name: e.target.value })}
+              name="" id="">
+              <option className="form-control" selected disabled>Problem Statement</option>
+              <option className="form-control" value="Call Tracking for VOIP">Call Tracking for VOIP</option>
+              <option className="form-control" value="Network Security Scanner">Network Security Scanner</option>
+              <option className="form-control" value="Email monitoring">Email monitoring</option>
+            </select>
+            <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
+            <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />
+            <select className="form-control " name="" id="">
+              <option className="form-control" selected disabled>Preference</option>
+              <option className="form-control" value="">1</option>
+              <option className="form-control" value="">2</option>
+              <option className="form-control" value="">3</option>
+
+
+            </select>
+          </div>
         </div>
-        
+        <div style={{ textAlign: 'center' }}>
+          <button className={`btn bgPurple text-light px-5`} style={{ fontSize: "20px" }} type="submit">SUBMIT</button>
+        </div>
+
       </form>
     </>
   )
