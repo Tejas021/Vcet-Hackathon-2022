@@ -160,7 +160,7 @@ function Faq() {
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div className="accordion-body text-light">
-                    Which payment methods do you accept?
+                    Payments would occur online (UPI or NEFT)
                   </div>
                 </div>
               </div>

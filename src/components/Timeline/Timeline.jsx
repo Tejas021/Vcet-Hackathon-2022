@@ -93,8 +93,8 @@ function Timeline() {
   ];
 
   return (
-    <>
-      <h1 className="title">Timeline</h1>
+    <div className='py-5'>
+      <h1 className="title my-5">Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -131,7 +131,7 @@ function Timeline() {
           );
         })}
       </VerticalTimeline>
-    </>
+    </div>
   );
 }
 

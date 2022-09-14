@@ -27,7 +27,7 @@ const Home = ({success}) => {
 if(success){
   toast.success("Registered successfully")
 }
-  },[success])
+  },[])
  
   return (
     <div>
