@@ -30,7 +30,7 @@ if(success){
   },[success])
  
   return (
-    <div id="Home">
+    <div>
 
 
       <Navbar/>
@@ -49,7 +49,7 @@ if(success){
       <Landing/>
       <About/>
       <Timer/>
-    
+  
       <Sponsor/>
       <ProblemStatements/>
       <Timeline/>
