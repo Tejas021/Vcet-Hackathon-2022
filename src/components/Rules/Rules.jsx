@@ -47,10 +47,13 @@ const Rules = () => {
           <div class="modal-content a" style={{ color: "#7A2BAA", background: "#180828" }}>
             <div class="modal-header ">
               <h5 class="modal-title " id="NEFT">NEFT Details</h5>
-
             </div>
-            <div class="modal-body" >
-              ...
+            <div class="modal-body" style={{color : '#fff', letterSpacing:'1px'}}>
+              <h5>Account Name:  Vatsal Harish Shah</h5>
+              <h5>Branch:  Dahisar East</h5>
+              <h5>A/c no - 17910110011454</h5>
+              <h5>IFSC - UCBA0001791</h5>
+              <h6>Payment should be done by single transaction per team.</h6>
             </div>
             <div class="modal-footer">
               <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
@@ -68,7 +71,11 @@ const Rules = () => {
 
             </div>
             <div class="modal-body" >
-              ...
+              <h5>You can Scan the Qr Code Given Below:</h5>
+              <img className='qrcode' src="src/assets/Payment_QR.png" alt="qrcode" />
+              <br />  
+              <h5>Or Pay On the following UPI-ID</h5>
+              <h6 style={{color: '#fff'}}>vatsalshah471@okhdfcbank</h6>
             </div>
             <div class="modal-footer">
               <button type="button" className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-dismiss="modal" >Close</button>
