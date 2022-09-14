@@ -4,7 +4,6 @@
 
 .LandingContainer{
     height:100vh;
-    
     width:auto;
     background:linear-gradient(
         to bottom,
@@ -14,11 +13,27 @@
         #00000000 70%,
         #100848a0 90%,
         rgba(0, 0, 0, 1) 100%
-      ),url("../../assets/landing_copy.jpg");
+      ),url("../../assets/backgrounds/sample2.png");
       background-attachment:fixed;
 
       background-position: center ;
 }
 
+
+@media screen and (max-width: 420px){
+    .LandingContainer {
+        max-width: 100vw;
+        height: 100vh;
+        background: url("../../assets/backgrounds/sample2.png");
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+/*  
+    .landingtxt{
+        display: none;
+    } */
+}
 
 
