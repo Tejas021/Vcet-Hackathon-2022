@@ -22,7 +22,7 @@ const Form = ({ setSuccess }) => {
   })
   const submitInfo = async (e) => {
     e.preventDefault();
-    console.log(data);
+   
     const res = await addDoc(collection(db, "registrations"), {
       data: data,
     }).then(docRef => { return docRef.id });

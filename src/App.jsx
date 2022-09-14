@@ -10,7 +10,7 @@ import Form from './pages/Form/Form'
 function App() {
 
   const [success,setSuccess]=useState(false)
-  console.log(success)
+
   return (
 
     <div className="App">
