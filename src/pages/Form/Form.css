@@ -73,6 +73,20 @@
     width: 100vw;
 }
 
+.problem-statement-container {
+    width: 100vw;
+}
+
+.problem-statement-container textarea {
+    max-height: none;
+    height: 150px;
+    resize: none;
+}
+
+.team-container {
+    width: 100vw;
+}
+
 .details-container {
     width: 100%;
     height: 100%;
