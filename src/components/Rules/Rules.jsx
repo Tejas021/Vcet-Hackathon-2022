@@ -72,7 +72,7 @@ const Rules = () => {
             </div>
             <div class="modal-body" >
               <h5>You can Scan the Qr Code Given Below:</h5>
-              <img  src="src/assets/Payment_QR.png" alt="qrcode" className={`${styles.qrcode}`}/>
+              <img  src="/Payment_QR.png" alt="qrcode" className={`${styles.qrcode}`}/>
               <br />  
               <h5>Or Pay On the following UPI-ID</h5>
               <h6 style={{color: '#fff'}}>vatsalshah471@okhdfcbank</h6>
