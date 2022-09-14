@@ -28,9 +28,9 @@ function Navbar() {
                         <li className="nav-item" onClick={()=>setIsActive("about")}>
                             <a className="nav-link" style={(isActive==="about")?{color:'white'}:{}} aria-current="page" href="#About">About</a>
                         </li>
-                        <li className="nav-item" onClick={()=>setIsActive("prizes")}>
+ {/*                       <li className="nav-item" onClick={()=>setIsActive("prizes")}>
                             <a className="nav-link" style={(isActive==="prizes")?{color:'white'}:{}} aria-current="page" href="#Prizes">Prizes</a>
-                        </li>
+    </li>*/}
                         <li className="nav-item" onClick={()=>setIsActive("sponsors")}>
                             <a className="nav-link" style={(isActive==="sponsors")?{color:'white'}:{}} aria-current="page" href="#Sponsors">Sponsors</a>
                         </li>
