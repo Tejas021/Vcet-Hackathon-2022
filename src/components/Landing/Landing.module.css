@@ -18,28 +18,19 @@
             #00000000 70%,
             #100848a0 90%,
             /* rgba(0, 0, 0, 1) 100%), url("../../assets/landing_copy.jpg"); */
-            rgba(0, 0, 0, 1) 100%), url("../../assets/lunar_city.jpg");
+            rgba(0, 0, 0, 1) 100%), url("../../assets/img2.png");
     background-attachment: fixed;
     background-position: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.landingContainer {
-    width: 80vw;
-    background-color: #000000d6;
-    backdrop-filter: blur(10px);
-    padding: 4vmin 0;
-    border-radius: 3vmin;
-    box-shadow: 0 0 2vmin 0 black;
-}
+
 
 .mainHeading {
     font-size: 7vmax;
     font-weight: 900;
     letter-spacing: 0.5vmin;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(45deg,#42faf9, #5a21ed);
+    text-shadow: 0 0 3vmin var(--c2);
 }
 
 .themeName {
@@ -48,7 +39,8 @@
     font-size: 4vmax;
     letter-spacing: 0.7vmin;
     font-weight: 700;
-    color: #42fafada;
+    color: rgb(219, 156, 255);
+    text-shadow: 0 0 5vmin var(--c2);
 }
 
 .collegeName {
@@ -56,4 +48,17 @@
     text-align: center;
     letter-spacing: 0.5vmin;
     font-weight: 700;
+    color: var(--c5);
+    text-shadow: 0 0 3vmin black;
+}
+@media screen and (width:600px) {
+    .mainHeading{
+        font-size: 45px;
+    }
+    .collegeName{
+        font-size: 18px;
+    }
+    .themeName{
+        font-size: 32px;
+    }
 }
