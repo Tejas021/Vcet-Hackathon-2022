@@ -23,10 +23,10 @@ const Rules = () => {
 
       </ul>
 
-      <Link to="/register" className={`${styles.Link}`}><button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}>REGISTER NOW</button></Link>
 
       <h3 className={`${styles.textPurple} mb-3`}>Registration</h3>
 
+      <Link to="/register" className={`${styles.Link}`}><button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}>REGISTER NOW</button></Link>
       <ul className={`text-light ${styles.ruleList}`}>
         <li> 9 Problem Statements will be provided from our end.</li>
         <li>  You have to submit 3 abstracts (one for each domain) to these Problem Statements out of <span className={`${styles.hLight}`}>all 9 Problem Statements</span> consising of Implementation & Technology Stack out of which 1 will be allocated and notified to each team one day prior via email.</li>
@@ -73,8 +73,8 @@ const Rules = () => {
             <div class="modal-body" >
               <h5>You can Scan the Qr Code Given Below:</h5>
 
-              <img  src="/Payment_QR.png" alt="qrcode" className={`${styles.qrcode}`}/>
-              <br />  
+              <img src="/Payment_QR.png" alt="qrcode" className={`${styles.qrcode}`} />
+              <br />
 
               <h5>Or Pay On the following UPI-ID</h5>
               <h6 style={{ color: '#fff' }}>vatsalshah471@okhdfcbank</h6>
