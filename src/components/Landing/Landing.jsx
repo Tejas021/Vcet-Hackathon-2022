@@ -14,7 +14,7 @@ const Landing = () => {
        
       </div>
       <div className={styles.RegisterBtnDiv}>
-        <Link to="/register" className={`${styles.linktoreg}`}><button className={` btn-success ${styles.RegisterBtn} btn text-light mx-4 my-2 p-2 px-4`}>REGISTER NOW</button></Link>
+        <Link to="/register" className={`${styles.linktoreg}`}><button className={`  ${styles.RegisterBtn} btn text-light mx-4 my-2 p-3 px-4`}>REGISTER NOW</button></Link>
         </div>
     </div>
   )
