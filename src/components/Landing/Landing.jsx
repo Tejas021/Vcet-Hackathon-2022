@@ -36,6 +36,9 @@ function Landing() {
         <h1 className="hackathon"> VCET HACKATHON</h1>
         <h1 className="moh">MULTIVERSE OF HACKING</h1>
       </div>
+      <div className="mobile">
+        
+      </div>
       </div>
     );
   }
