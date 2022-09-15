@@ -7,7 +7,7 @@ const Landing = () => {
         <h1 className='collegename' >Vidyavardhini's College Of Engineering and Technology </h1>
         <p className='text-center text-light'>presents</p>
         <h1 className='fw-bold'>VCET HACKATHON</h1>
-        <h3 className='text-center text-light fw-bold'>Multiverse of Coding</h3>
+        <h3 className='text-center text-light fw-bold'>Multiverse of Hacking</h3>
       </div>
     </div>
   )
