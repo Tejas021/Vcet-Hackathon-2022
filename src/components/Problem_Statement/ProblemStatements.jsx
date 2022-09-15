@@ -4,7 +4,7 @@ import styles from './ProblemStatements.module.css'
 function ProblemStatements() {
     return (
         <>
-            <div className={classnames(styles.mainProblemStatementsContainer, styles.grid)}>
+            <div id="pbSt" className={classnames(styles.mainProblemStatementsContainer, styles.grid)}>
                 <br />
                 <div className={styles.heading1}>Problem Statements</div>
                 <br />

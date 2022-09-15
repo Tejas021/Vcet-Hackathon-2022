@@ -61,6 +61,12 @@
     font-weight: 500;
     color: var(--c5);
     text-shadow: 0 0 3vmin black;
+    text-decoration: none;
+    
+}
+
+.landingLink{
+    text-decoration: none;
 }
 
 .RegisterBtnDiv {

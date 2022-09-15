@@ -31,6 +31,11 @@ function Navbar() {
                         <li className="nav-item" onClick={() => setIsActive("about")}>
                             <a className="nav-link" style={(isActive === "about") ? { color: 'white' } : {}} aria-current="page" href="#About">About</a>
                         </li>
+
+                        <li className="nav-item" onClick={() => setIsActive("problems")}>
+                        <a className="nav-link" style={(isActive === "problems") ? { color: 'white' } : {}} aria-current="page" href="#pbSt">Problems</a>
+                    </li>
+
                         <li className="nav-item" onClick={() => setIsActive("prizes")}>
                             <a className="nav-link" style={(isActive === "prizes") ? { color: 'white' } : {}} aria-current="page" href="#Prizes">Prizes</a>
                         </li>
