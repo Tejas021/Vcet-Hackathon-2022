@@ -3,7 +3,6 @@ import "./sponsor.css"
 function Sponsor() {
     return (
 
-
         <div className="main-container" id="Sponsors">
 
             <h1 className='text-center text-light mb-3 mb-md-5'>Previous Sponsors</h1>

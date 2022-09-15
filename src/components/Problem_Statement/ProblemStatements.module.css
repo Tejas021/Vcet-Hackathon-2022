@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .grid {
@@ -20,9 +21,10 @@
 
 .heading1,
 .heading3 {
+  margin: 2vmin 0;
   text-align: center;
   grid-column: span 12;
-  color: var(--c4);
+  color: white;
 }
 .heading1{
   font-size: 45px;
@@ -30,7 +32,9 @@
 }
 .heading3{
   font-size: 35px;
+  /* color: var(--c4); */
   font-weight: 500;
+  margin-bottom:50px;
 }
 
 .probsContainer{

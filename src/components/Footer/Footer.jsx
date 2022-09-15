@@ -43,7 +43,7 @@ const Footer = () => {
 
 
                     <div className={`${FooterCss.box} ${FooterCss.posts}`}>
-                        <h2>Recents Posts </h2>
+                        <h2>About Hackathon </h2>
                         <div className={FooterCss.content}>
                             <p>Hackathons help IT companies to find talented Programmers, Software Developers, Designers etc. It also helps the participants to launch successful startups if their products or solutions have business value. So take up the Challenge
                                 and Code your way to the top! </p>
