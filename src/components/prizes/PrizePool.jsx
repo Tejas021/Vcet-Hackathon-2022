@@ -4,7 +4,7 @@ import styles from './PrizePool.module.css'
 export default function PrizePool() {
     return (
         <>
-            <div className={styles.mainPrizePoolContainer}>
+            <div className={styles.mainPrizePoolContainer} id="Prizes">
 
                 <img className={styles.astroImage} src="../src/assets/prizes/PrizePool.png" alt="" />
                 <div className={styles.prizeTextDiv}>
