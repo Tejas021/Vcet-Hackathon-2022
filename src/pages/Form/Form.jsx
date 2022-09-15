@@ -34,6 +34,8 @@ const Form = ({ setSuccess }) => {
     }
   }
 
+ 
+
   return (
     <>
       <Navbar />
@@ -181,13 +183,12 @@ const Form = ({ setSuccess }) => {
             <textarea
               className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB1Abstract} onChange={(e) => setData({ ...data, PB1Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB1Pref: e.target.value })}>
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="1">1</option>
-              <option className="form-control" value="2">2</option>
-              <option className="form-control" value="3">3</option>
-
-
+            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB1Pref: e.target.value==='clear'?'':e.target.value })}>
+              <option className="form-control" selected={data.PB1Pref===''} disabled>Preference</option>
+              <option disabled={data.PB3Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
+              <option disabled={data.PB3Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
+              <option disabled={data.PB3Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
+              <option className="form-control" value='clear' disabled={data.PB1Pref===''}>clear</option>
             </select>
           </div>
           <div className="problem2-container blur-container form-grid">
@@ -204,13 +205,12 @@ const Form = ({ setSuccess }) => {
             </select>
             <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB2Abstract} onChange={(e) => setData({ ...data, PB2Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB2Tech} onChange={(e) => setData({ ...data, PB2Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB2Pref: e.target.value })}>
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="1">1</option>
-              <option className="form-control" value="2">2</option>
-              <option className="form-control" value="3">3</option>
-
-
+            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB2Pref: e.target.value==='clear'?'':e.target.value })}>
+              <option className="form-control" selected={data.PB2Pref===''} disabled>Preference</option>
+              <option disabled={data.PB1Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
+              <option disabled={data.PB1Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
+              <option disabled={data.PB1Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
+              <option className="form-control" value='clear' disabled={data.PB2Pref===''}>clear</option>
             </select>
           </div>
           <div className="problem3-container blur-container form-grid">
@@ -227,13 +227,12 @@ const Form = ({ setSuccess }) => {
             </select>
             <textarea className="form-control" name="" id="" cols="" rows="" placeholder='Abstract' value={data.PB3Abstract} onChange={(e) => setData({ ...data, PB3Abstract: e.currentTarget.value })} required></textarea>
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB3Tech} onChange={(e) => setData({ ...data, PB3Tech: e.currentTarget.value })} required />
-            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB3Pref: e.target.value })}>
-              <option className="form-control" selected disabled>Preference</option>
-              <option className="form-control" value="1">1</option>
-              <option className="form-control" value="2">2</option>
-              <option className="form-control" value="3">3</option>
-
-
+            <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB3Pref: e.target.value==='clear'?'':e.target.value })}>
+              <option className="form-control" selected={data.PB3Pref===''} disabled>Preference</option>
+              <option disabled={data.PB1Pref==='1' || data.PB2Pref==='1'} className="form-control" value="1">1</option>
+              <option disabled={data.PB1Pref==='2' || data.PB2Pref==='2'} className="form-control" value="2">2</option>
+              <option disabled={data.PB1Pref==='3' || data.PB2Pref==='3'} className="form-control" value="3">3</option>
+              <option className="form-control" value='clear' disabled={data.PB3Pref===''}>clear</option>
             </select>
           </div>
         </div>
