@@ -25,7 +25,7 @@
 .reddot {
     height: 15px;
     width: 15px;
-    background-color: red;
+    background-color: rgb(255, 50, 50);
     border-radius: 50%;
     display: inline-block;
     margin-left: 5px;
@@ -34,7 +34,7 @@
 .yellowdot {
     height: 15px;
     width: 15px;
-    background-color: yellow;
+    background-color: rgb(185, 185, 0);
     border-radius: 50%;
     display: inline-block;
     margin-left: 10px;
@@ -81,12 +81,13 @@
 }
 
 .type {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'consolas';
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 20px;
     color: #0000;
     background:
-        linear-gradient(-90deg, #11cdef 1px, #0000 0) 10px 0,
-        linear-gradient(#11cdef 0 0) 0 0;
+        linear-gradient(-90deg, var(--c5) 1px, #0000 0) 10px 0,
+        linear-gradient(var(--c5) 0 0) 0 0;
     background-size: calc(var(--n)*1ch) 200%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;

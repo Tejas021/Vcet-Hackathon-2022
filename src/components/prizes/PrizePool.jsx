@@ -10,7 +10,7 @@ export default function PrizePool() {
                 <div className={styles.prizeTextDiv}>
                     Prize pool of
                     <div className={styles.cashPrice}>
-                    &#x20b9; 60,000
+                        &#x20b9; 60,000
                     </div>
                     along with exciting goodies.
                 </div>
