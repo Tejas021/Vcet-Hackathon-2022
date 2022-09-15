@@ -104,12 +104,15 @@
   }
   .heading1{
     font-size: 30px;
+    
   }
   .heading3{
-    font-size: 28px;
+    font-size: 20px;
+    margin-bottom:20px;
+  
   }
   .probsContainer{
-    flex-flow: column;
+    /* flex-flow: column; */
     align-items: center;
   }
   .flipCard{
