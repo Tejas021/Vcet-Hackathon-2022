@@ -5,9 +5,12 @@ import { useNavigate } from 'react-router-dom'
 import './Form.css'
 import { addDoc, collection, db } from '../../firebase'
 
-
+import { Sender } from './Email'
+import { useRef } from 'react'
 
 const Form = ({ setSuccess }) => {
+
+  const form = useRef()
 
   const navigate = useNavigate()
   const [data, setData] = useState({
@@ -39,9 +42,10 @@ const Form = ({ setSuccess }) => {
   return (
     <>
       <Navbar />
-      <form className="form-main-container marginal" onSubmit={(e) => submitInfo(e)}>
+      <form className="form-main-container marginal" onSubmit={(e) => submitInfo(e)} ref={form}>
 
         <h1 className="form-h1">Registration</h1>
+        {data.TLPhone}
         <hr className="form-hr" />
         <h3 className="form-h3">Team Details</h3>
         <div className="form-main-container form-grid">
@@ -57,13 +61,13 @@ const Form = ({ setSuccess }) => {
                 Team Leader
                 <span style={{ "color": "tomato" }}>*</span>
               </label>
-              <input type="text" className="form-control" id="id_team_leader_name" name="team_leader_name"
+              <input type="text" className="form-control" id="id_team_leader_name" name="to_name"
                 placeholder="Full Name" data-error="Please enter your team name" value={data.TLName} onChange={(e) => setData({ ...data, TLName: e.currentTarget.value })} required />
 
               <input type="text" className="form-control" id="id_team_leader_college_name" name="team_leader_college_name"
                 placeholder="College Name" data-error="Please enter your team name" value={data.TLCollege} onChange={(e) => setData({ ...data, TLCollege: e.currentTarget.value })} required />
 
-              <input type="email" className="form-control email-input" id="id_team_leader_email" name="team_leader_email"
+              <input type="email" className="form-control email-input" id="id_team_leader_email" name="to_email"
                 placeholder="Email" data-error="Please enter your team name" value={data.TLMail} onChange={(e) => setData({ ...data, TLMail: e.currentTarget.value })} required />
 
               <input type="text" className="form-control half-form course-year" id="id_team_leader_course_year"
@@ -94,13 +98,13 @@ const Form = ({ setSuccess }) => {
               <input type="text" className="form-control" id="id_teammate1_college_name" name="teammate1_college_name"
                 placeholder="College Name" data-error="Please enter your team name" value={data.TM1College} onChange={(e) => setData({ ...data, TM1College: e.currentTarget.value })} />
               <input type="email" className="form-control email-input" id="id_teammate1_email" name="teammate1_email"
-                placeholder="Email" data-error="Please enter your team name" value={data.TLMail} onChange={(e) => setData({ ...data, TM1Mail: e.currentTarget.value })} />
+                placeholder="Email" data-error="Please enter your team name" value={data.TM1Mail} onChange={(e) => setData({ ...data, TM1Mail: e.currentTarget.value })} />
               <input type="text" className="form-control half-form course-year" id="id_teammate1_course_year"
                 name="teammate1_course_year" placeholder="Course and Year" data-error="Please enter your team name"
                 value={data.TM1CourseYear} onChange={(e) => setData({ ...data, TM1CourseYear: e.currentTarget.value })} />
               <input type="text" className="form-control half-form tel-input" id="id_teammate1_tel_number"
                 name="teammate1_tel_number" placeholder="Phone Number" data-error="Please enter your team name"
-                value={data.TLPhone} onChange={(e) => setData({ ...data, TLPhone: e.currentTarget.value })} />
+                value={data.TM1Phone} onChange={(e) => setData({ ...data, TM1Phone: e.currentTarget.value })} />
               <input type="text" className="form-control half-form alt-tel-input" id="id_teammate1_alter_tel_number"
                 name="teammate1_alter_tel_number" placeholder="Alternate Phone No."
                 data-error="Please enter your team name" value={data.TM1AltPhone} onChange={(e) => setData({ ...data, TM1AltPhone: e.currentTarget.value })}/>
@@ -241,6 +245,8 @@ const Form = ({ setSuccess }) => {
         </div>
 
       </form>
+
+      <button onClick={()=>{Sender(form);console.log(form)}}>SendMail</button>
     </>
   )
 }
