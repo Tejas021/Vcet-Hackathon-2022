@@ -28,7 +28,7 @@ const Form = ({ setSuccess }) => {
    
     const res = await addDoc(collection(db, "registrations"), {
       data: data,
-    }).then(docRef => { return docRef.id });
+    }).then(docRef => { return docRef.id }).then(Sender(data.TLMail,data.TLName));
     // console.log(res)
     if (res) {
       setSuccess(true);
@@ -246,7 +246,7 @@ const Form = ({ setSuccess }) => {
 
       </form>
 
-      <button onClick={()=>{Sender(form);console.log(form)}}>SendMail</button>
+      
     </>
   )
 }
