@@ -14,11 +14,11 @@ const Form = ({ setSuccess }) => {
     PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "",
     PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "",
     PB3Tech: "", PB3Pref: "", TName: "", TLName: "", TLCollege: "", TLCourseYear: "",
-    TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "", TM1Name: "", TM1College: "",
-    TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "",
+    TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "",TLCountry: "",TLState: "", TM1Name: "", TM1College: "",
+    TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "",TM1Country: "",TM1State: "",
     TM2Name: "", TM2College: "", TM2CourseYear: "", TM2Mail: "", TM2Phone: "",
-    TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
-    TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",
+    TM2AltPhone: "", TM2Gender: "",TM2Country: "",TM2State: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
+    TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",TM3Country: "",TM3State: "",
   })
   const submitInfo = async (e) => {
     e.preventDefault();
@@ -69,7 +69,7 @@ const Form = ({ setSuccess }) => {
               <input type="text" className="form-control half-form course-year" id="id_team_leader_course_year"
                 name="team_leader_course_year" placeholder="Course and Year"
                 data-error="Please enter your team name" value={data.TLCourseYear} onChange={(e) => setData({ ...data, TLCourseYear: e.currentTarget.value })} required />
-              <input type="text" className="form-control half-form tel-input" id="id_team_leader_tel_number"
+              <input type="tel" maxLength="10"  pattern="[0-9]{10}" className="form-control half-form tel-input" id="id_team_leader_tel_number"
                 name="team_leader_tel_number" placeholder="Phone Number" data-error="Please enter your team name"
                 value={data.TLPhone} onChange={(e) => setData({ ...data, TLPhone: e.currentTarget.value })} required />
 
@@ -82,6 +82,8 @@ const Form = ({ setSuccess }) => {
                 <option className="form-control" value="M">Male</option>
                 <option className="form-control" value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TLCountry} onChange={(e) => setData({ ...data, TLCountry: e.currentTarget.value })} required />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TLState} onChange={(e) => setData({ ...data, TLState: e.currentTarget.value })} required/>
             </div>
           </div>
           <div className="team-member1-container">
@@ -109,6 +111,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM1Country} onChange={(e) => setData({ ...data, TM1Country: e.currentTarget.value })} required />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TM1State} onChange={(e) => setData({ ...data, TM1State: e.currentTarget.value })} required />
             </div>
           </div>
           <div className="team-member2-container">
@@ -136,6 +140,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM2Country} onChange={(e) => setData({ ...data, TM2Country: e.currentTarget.value })} required />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"  value={data.TM2State} onChange={(e) => setData({ ...data, TM2State: e.currentTarget.value })} required />
             </div>
           </div>
           <div className="team-member3-container">
@@ -163,6 +169,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TM3Country} onChange={(e) => setData({ ...data, TM3Country: e.currentTarget.value })} required />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"   value={data.TM3State} onChange={(e) => setData({ ...data, TM3State: e.currentTarget.value })} required />
             </div>
           </div>
         </div>
