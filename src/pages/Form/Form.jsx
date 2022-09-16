@@ -28,7 +28,7 @@ const Form = ({ setSuccess }) => {
    
     const res = await addDoc(collection(db, "registrations"), {
       data: data,
-    }).then(docRef => { return docRef.id }).then(Sender(data.TLMail,data.TLName));
+    }).then(docRef => { return docRef.id }).then(Sender(data.TLMail,data.TName));
     // console.log(res)
     if (res) {
       setSuccess(true);
@@ -115,8 +115,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
-              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM1Country} onChange={(e) => setData({ ...data, TM1Country: e.currentTarget.value })} required />
-              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TM1State} onChange={(e) => setData({ ...data, TM1State: e.currentTarget.value })} required />
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM1Country} onChange={(e) => setData({ ...data, TM1Country: e.currentTarget.value })} />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TM1State} onChange={(e) => setData({ ...data, TM1State: e.currentTarget.value })} />
             </div>
           </div>
           <div className="team-member2-container">
@@ -144,8 +144,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
-              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM2Country} onChange={(e) => setData({ ...data, TM2Country: e.currentTarget.value })} required />
-              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"  value={data.TM2State} onChange={(e) => setData({ ...data, TM2State: e.currentTarget.value })} required />
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM2Country} onChange={(e) => setData({ ...data, TM2Country: e.currentTarget.value })}/>
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"  value={data.TM2State} onChange={(e) => setData({ ...data, TM2State: e.currentTarget.value })} />
             </div>
           </div>
           <div className="team-member3-container">
@@ -173,8 +173,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
-              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TM3Country} onChange={(e) => setData({ ...data, TM3Country: e.currentTarget.value })} required />
-              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"   value={data.TM3State} onChange={(e) => setData({ ...data, TM3State: e.currentTarget.value })} required />
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TM3Country} onChange={(e) => setData({ ...data, TM3Country: e.currentTarget.value })}/>
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"   value={data.TM3State} onChange={(e) => setData({ ...data, TM3State: e.currentTarget.value })}/>
             </div>
           </div>
         </div>
@@ -197,9 +197,9 @@ const Form = ({ setSuccess }) => {
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB1Pref: e.target.value==='clear'?'':e.target.value })}>
               <option className="form-control" selected={data.PB1Pref===''} disabled>Preference</option>
-              <option disabled={data.PB3Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
-              <option disabled={data.PB3Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
-              <option disabled={data.PB3Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
+              <option disabled={data.PB2Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
+              <option disabled={data.PB2Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
+              <option disabled={data.PB2Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
               <option className="form-control" value='clear' disabled={data.PB1Pref===''}>clear</option>
             </select>
           </div>

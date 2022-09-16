@@ -1,11 +1,11 @@
 import emailjs from '@emailjs/browser';
 
 
-export const Sender=(TLEmail,TLName)=>{
+export const Sender=(TLEmail,TName)=>{
 
     const TemplateParams={
         to_email:TLEmail
-        ,to_name:TLName
+        ,team_name:TName
     }
     emailjs.send('service_evdoycs', 'template_digahzq',TemplateParams,"0x4TGJwuOrAE4uXeo" ).then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
