@@ -81,7 +81,8 @@
     background: #A36CE0!important;
   
     border-radius: 7px;
-    font-weight: normal;
+    font-weight: 600;
+
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     outline:white!important;
