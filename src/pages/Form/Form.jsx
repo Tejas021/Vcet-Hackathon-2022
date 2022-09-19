@@ -185,9 +185,9 @@ const Form = ({ setSuccess }) => {
             <input type="text" name="" id="" className="form-control" placeholder="Technology Stack" value={data.PB1Tech} onChange={(e) => setData({ ...data, PB1Tech: e.currentTarget.value })} required />
             <select className="form-control " name="" id="" onChange={(e) => setData({ ...data, PB1Pref: e.target.value==='clear'?'':e.target.value })}>
               <option className="form-control" selected={data.PB1Pref===''} disabled>Preference</option>
-              <option disabled={data.PB3Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
-              <option disabled={data.PB3Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
-              <option disabled={data.PB3Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
+              <option disabled={data.PB2Pref==='1' || data.PB3Pref==='1'} className="form-control" value="1">1</option>
+              <option disabled={data.PB2Pref==='2' || data.PB3Pref==='2'} className="form-control" value="2">2</option>
+              <option disabled={data.PB2Pref==='3' || data.PB3Pref==='3'} className="form-control" value="3">3</option>
               <option className="form-control" value='clear' disabled={data.PB1Pref===''}>clear</option>
             </select>
           </div>
