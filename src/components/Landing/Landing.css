@@ -1,79 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+
+.test1 {
+    color: red
+}
+
 .wrapper {
-    margin: 3%;
-    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            #100848a0 10%,
+            #00000000 50%,
+            #00000000 70%,
+            #100848a0 90%, */
+            /* rgba(0, 0, 0, 1) 100%), url("../../assets/landing_copy.jpg"); */
+            /* rgba(0, 0, 0, 1) 100%), url("../../assets/img4.png"); */
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
 }
 
-.college {
-    position: absolute;
-    top: 20%;
-    font-size: 30px;
-    left: 22%;
-    color: aliceblue;
-    margin: auto;
+
+
+.mainHeading {
+    font-size: 5vmax;
+    font-weight: 700;
+    letter-spacing: 0.5vmin;
+    text-shadow: 0 0 3vmin var(--c2);
 }
 
-.present{
-    position: absolute;
-    top: 27%;
-    font-size: 15px;
-    left: 45%;
-    color: aliceblue;
-    margin: auto;
-}
-.hackathon{
-    position: absolute;
-    top: 32%;
-    /* font-size: 30px; */
-    left: 35%;
-    color: aliceblue;
-    margin: auto;
+.themeName {
+    background-color: #00000000;
+    text-align: center;
+    font-size: 2vmax;
+    letter-spacing: 0.7vmin;
+    font-weight: 500;
+    color: rgb(219, 156, 255);
+    text-shadow: 0 0 5vmin var(--c2);
 }
 
-.moh{
-    position: absolute;
-    top: 40%;
-    /* font-size: 30px; */
-    left: 31%;
-    color: aliceblue;
-    margin: auto;
+.presents {
+    background-color: #00000000;
+    text-align: center;
+    font-size: 1vmax;
+    letter-spacing: 0.6vmin;
+    font-weight: 400;
+    color: rgb(219, 156, 255);
+    text-shadow: 0 0 5vmin var(--c2);
 }
 
-@media only screen and (max-width:767px) {
-    
-    .college {
-        /* position: absolute; */
-        top: 35%;
-        font-size: 17px;
-        text-align: center;
-        left: 2%;
-        /* color: aliceblue; */
-        margin: auto;
+.collegeName {
+    background-color: #00000000;
+    text-align: center;
+    letter-spacing: 0.5vmin;
+    font-size: 2vmax;
+    font-weight: 500;
+    color: var(--c5);
+    text-shadow: 0 0 3vmin black;
+}
+
+@media only screen and (max-width:600px) {
+    .mainHeading {
+        font-size: 45px;
     }
-    
-    .present{
-        /* position: absolute; */
-        top: 43%;
-        font-size: 9px;
-        left: 47%;
-        /* color: aliceblue; */
-        margin: auto;
+
+    .collegeName {
+        font-size: 18px;
     }
-    .hackathon{
-        /* position: absolute; */
-        top: 47%;
-        /* font-size: 30px; */
-        left: 17%;
-        /* color: aliceblue; */
-        margin: auto;
-    }
-    
-    .moh{
-        /* position: absolute; */
-        top: 52%;
-        /* font-size: 30px; */
-        left: 3%;
-        /* color: aliceblue; */
-        /* margin: auto; */
+
+    .themeName {
+        font-size: 32px;
     }
 
 }
