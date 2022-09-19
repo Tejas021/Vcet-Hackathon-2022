@@ -61,7 +61,49 @@
     font-weight: 500;
     color: var(--c5);
     text-shadow: 0 0 3vmin black;
+    text-decoration: none;
+    
 }
+
+.landingLink{
+    text-decoration: none;
+}
+
+.RegisterBtnDiv {
+
+    transition: all 0.2s ease-in-out;
+}
+
+.RegisterBtn {
+    text-decoration: none;
+ 
+    color: rgba(255, 255, 255, 0.8);
+    background: #A36CE0!important;
+  
+    border-radius: 7px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    outline:white!important;
+}
+
+.RegisterBtn:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+.linktoreg {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.linktoreg:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 
 @media only screen and (max-width:600px) {
     .mainHeading {

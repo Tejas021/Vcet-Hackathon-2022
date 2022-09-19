@@ -1,0 +1,60 @@
+@import url(../fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainPrizePoolContainer {
+    /* background: cadetblue; */
+    padding: 0vh 10vw;
+    display: flex;
+    justify-content: space-around;
+    /* height: 60vh; */
+}
+
+.astroImage {
+    /* border: 2px solid red; */
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.cashPrice{
+    font-size: 65px;
+    font-weight: 800;
+    color: gold;
+}
+
+.prizeTextDiv {
+    height: 100%;
+    padding: 2vh;
+    margin-top: 60px;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: var(--c5);
+    font-family: ""Poppins", sans-serif";
+    font-weight: 200;
+    font-size: 50px;
+    letter-spacing: 1px
+}
+
+@media only screen and (max-width:600px) {
+    .mainPrizePoolContainer {
+        flex-flow: column;
+        margin-top: 50px;
+    }
+
+    .cashPrice{
+        font-size: 45px;
+    }
+
+    .prizeTextDiv {
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    .astroImage{
+        max-width: 100%;
+    }
+}

@@ -1,4 +1,22 @@
-body{
+body {
     background-color: #180828;
-  
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.modal-header {
+    padding: 0px !important;
+    /* max-height: 100vh !important; */
+    /* overflow-y: hidden; */
 }

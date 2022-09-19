@@ -7,6 +7,7 @@ import img1 from "../../assets/gallery/winners.jpg"
 import img4 from "../../assets/gallery/Screenshot_2021.png"
 import img2 from "../../assets/gallery/car3.png"
 import img3 from "../../assets/gallery/img5.jpg"
+import img5 from "../../assets/gallery/2021.jpeg"
 // import img3  from "../../assets/gallery/Screenshot_2021.png"
 
 export default function Gallery() {
@@ -41,7 +42,7 @@ export default function Gallery() {
             <div className={` carousel-caption  ${styles.carCap}`}>
               <h5>THREE'S A CHARM !</h5>
               <p>
-                40 Teams | 10 Finalists | Prize worth Rs.50,000
+                40 Teams | 10 Finalists | Prize worth Rs.50,000<br/>
                 1st Fr. Conceicao Rodrigues | 2nd DJ Sanghvi | c3rd DJ Sanghvi</p>
             </div>
           </div>
@@ -51,8 +52,21 @@ export default function Gallery() {
             <div className={` carousel-caption  ${styles.carCap}`}>
               <h5>EVEN THE PANDEMIC COULDN'T STOP US!</h5>
               <p>
-                39 Teams | 138 Participants | 10 Finalists | Prize worth Rs.50,000
+                39 Teams | 138 Participants | 10 Finalists | Prize worth Rs.50,000<br/>
                 1st LINKERS | 2nd NEURONS | 3rd UKKU
+              </p>
+            </div>
+          </div>
+
+          
+          <div className="carousel-item">
+            <img src={img5} className={`d-block w-100 ${styles.carImage}`} alt="..." />
+            <div className={` carousel-caption  ${styles.carCap}`}>
+              <h5>VCET HACKATHON 21 RELOADED !</h5>
+              <p>
+                39 Teams | 5 Finalists | Prize worth Rs.50,000<br/>
+                1st ACCESS DENIED | 2nd UKKU | 3rd BREAKING CODE
+              
               </p>
             </div>
           </div>
