@@ -15,6 +15,9 @@ export default function PrizePool() {
                     along with exciting goodies.
                 </div>
             </div>
+            <div className={styles.mainPrizeDistributionContainer}>
+                <div className={styles.firstPrizeContainer}></div>
+            </div>
         </>
     )
 } 
