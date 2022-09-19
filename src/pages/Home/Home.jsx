@@ -51,10 +51,11 @@ const Home = ({ success }) => {
       <About />
       <Timer />
       <PrizePool />
-      <Sponsor />
+     
       <ProblemStatements />
       <Timeline />
       <Rules />
+      <Sponsor />
       <Gallery />
       <Faq />
       <Contact />

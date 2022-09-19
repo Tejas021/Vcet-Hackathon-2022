@@ -5,27 +5,30 @@ import { useNavigate } from 'react-router-dom'
 import './Form.css'
 import { addDoc, collection, db } from '../../firebase'
 
-
+import { Sender } from './Email'
+import { useRef } from 'react'
 
 const Form = ({ setSuccess }) => {
+
+  const form = useRef()
 
   const navigate = useNavigate()
   const [data, setData] = useState({
     PB1Name: "", PB1Abstract: "", PB1Tech: "", PB1Pref: "",
     PB2Name: "", PB2Abstract: "", PB2Tech: "", PB2Pref: "", PB3Name: "", PB3Abstract: "",
     PB3Tech: "", PB3Pref: "", TName: "", TLName: "", TLCollege: "", TLCourseYear: "",
-    TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "", TM1Name: "", TM1College: "",
-    TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "",
+    TLMail: "", TLPhone: "", TLAltPhone: "", TLGender: "",TLCountry: "",TLState: "", TM1Name: "", TM1College: "",
+    TM1CourseYear: "", TM1Mail: "", TM1Phone: "", TM1AltPhone: "", TM1Gender: "",TM1Country: "",TM1State: "",
     TM2Name: "", TM2College: "", TM2CourseYear: "", TM2Mail: "", TM2Phone: "",
-    TM2AltPhone: "", TM2Gender: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
-    TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",
+    TM2AltPhone: "", TM2Gender: "",TM2Country: "",TM2State: "", TM3Name: "", TM3College: "", TM3CourseYear: "",
+    TM3Mail: "", TM3Phone: "", TM3AltPhone: "", TM3Gender: "",TM3Country: "",TM3State: "",
   })
   const submitInfo = async (e) => {
     e.preventDefault();
    
     const res = await addDoc(collection(db, "registrations"), {
       data: data,
-    }).then(docRef => { return docRef.id });
+    }).then(docRef => { return docRef.id }).then(Sender(data.TLMail,data.TName));
     // console.log(res)
     if (res) {
       setSuccess(true);
@@ -39,9 +42,10 @@ const Form = ({ setSuccess }) => {
   return (
     <>
       <Navbar />
-      <form className="form-main-container marginal" onSubmit={(e) => submitInfo(e)}>
+      <form className="form-main-container marginal" onSubmit={(e) => submitInfo(e)} ref={form}>
 
         <h1 className="form-h1">Registration</h1>
+        {data.TLPhone}
         <hr className="form-hr" />
         <h3 className="form-h3">Team Details</h3>
         <div className="form-main-container form-grid">
@@ -57,19 +61,19 @@ const Form = ({ setSuccess }) => {
                 Team Leader
                 <span style={{ "color": "tomato" }}>*</span>
               </label>
-              <input type="text" className="form-control" id="id_team_leader_name" name="team_leader_name"
+              <input type="text" className="form-control" id="id_team_leader_name" name="to_name"
                 placeholder="Full Name" data-error="Please enter your team name" value={data.TLName} onChange={(e) => setData({ ...data, TLName: e.currentTarget.value })} required />
 
               <input type="text" className="form-control" id="id_team_leader_college_name" name="team_leader_college_name"
                 placeholder="College Name" data-error="Please enter your team name" value={data.TLCollege} onChange={(e) => setData({ ...data, TLCollege: e.currentTarget.value })} required />
 
-              <input type="email" className="form-control email-input" id="id_team_leader_email" name="team_leader_email"
+              <input type="email" className="form-control email-input" id="id_team_leader_email" name="to_email"
                 placeholder="Email" data-error="Please enter your team name" value={data.TLMail} onChange={(e) => setData({ ...data, TLMail: e.currentTarget.value })} required />
 
               <input type="text" className="form-control half-form course-year" id="id_team_leader_course_year"
                 name="team_leader_course_year" placeholder="Course and Year"
                 data-error="Please enter your team name" value={data.TLCourseYear} onChange={(e) => setData({ ...data, TLCourseYear: e.currentTarget.value })} required />
-              <input type="text" className="form-control half-form tel-input" id="id_team_leader_tel_number"
+              <input type="tel" maxLength="10"  pattern="[0-9]{10}" className="form-control half-form tel-input" id="id_team_leader_tel_number"
                 name="team_leader_tel_number" placeholder="Phone Number" data-error="Please enter your team name"
                 value={data.TLPhone} onChange={(e) => setData({ ...data, TLPhone: e.currentTarget.value })} required />
 
@@ -82,6 +86,8 @@ const Form = ({ setSuccess }) => {
                 <option className="form-control" value="M">Male</option>
                 <option className="form-control" value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TLCountry} onChange={(e) => setData({ ...data, TLCountry: e.currentTarget.value })} required />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TLState} onChange={(e) => setData({ ...data, TLState: e.currentTarget.value })} required/>
             </div>
           </div>
           <div className="team-member1-container">
@@ -94,13 +100,13 @@ const Form = ({ setSuccess }) => {
               <input type="text" className="form-control" id="id_teammate1_college_name" name="teammate1_college_name"
                 placeholder="College Name" data-error="Please enter your team name" value={data.TM1College} onChange={(e) => setData({ ...data, TM1College: e.currentTarget.value })} />
               <input type="email" className="form-control email-input" id="id_teammate1_email" name="teammate1_email"
-                placeholder="Email" data-error="Please enter your team name" value={data.TLMail} onChange={(e) => setData({ ...data, TM1Mail: e.currentTarget.value })} />
+                placeholder="Email" data-error="Please enter your team name" value={data.TM1Mail} onChange={(e) => setData({ ...data, TM1Mail: e.currentTarget.value })} />
               <input type="text" className="form-control half-form course-year" id="id_teammate1_course_year"
                 name="teammate1_course_year" placeholder="Course and Year" data-error="Please enter your team name"
                 value={data.TM1CourseYear} onChange={(e) => setData({ ...data, TM1CourseYear: e.currentTarget.value })} />
               <input type="text" className="form-control half-form tel-input" id="id_teammate1_tel_number"
                 name="teammate1_tel_number" placeholder="Phone Number" data-error="Please enter your team name"
-                value={data.TLPhone} onChange={(e) => setData({ ...data, TLPhone: e.currentTarget.value })} />
+                value={data.TM1Phone} onChange={(e) => setData({ ...data, TM1Phone: e.currentTarget.value })} />
               <input type="text" className="form-control half-form alt-tel-input" id="id_teammate1_alter_tel_number"
                 name="teammate1_alter_tel_number" placeholder="Alternate Phone No."
                 data-error="Please enter your team name" value={data.TM1AltPhone} onChange={(e) => setData({ ...data, TM1AltPhone: e.currentTarget.value })}/>
@@ -109,6 +115,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM1Country} onChange={(e) => setData({ ...data, TM1Country: e.currentTarget.value })} />
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name" value={data.TM1State} onChange={(e) => setData({ ...data, TM1State: e.currentTarget.value })} />
             </div>
           </div>
           <div className="team-member2-container">
@@ -136,6 +144,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name"  value={data.TM2Country} onChange={(e) => setData({ ...data, TM2Country: e.currentTarget.value })}/>
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"  value={data.TM2State} onChange={(e) => setData({ ...data, TM2State: e.currentTarget.value })} />
             </div>
           </div>
           <div className="team-member3-container">
@@ -163,6 +173,8 @@ const Form = ({ setSuccess }) => {
                 <option value="M">Male</option>
                 <option value="F">Female</option>
               </select>
+              <input type="text" placeholder="Country "  className="form-control half-form  " name="country_name" id="country_name" value={data.TM3Country} onChange={(e) => setData({ ...data, TM3Country: e.currentTarget.value })}/>
+              <input type="text" placeholder="State " className="form-control half-form "  name="state_name" id="state_name"   value={data.TM3State} onChange={(e) => setData({ ...data, TM3State: e.currentTarget.value })}/>
             </div>
           </div>
         </div>
@@ -241,6 +253,8 @@ const Form = ({ setSuccess }) => {
         </div>
 
       </form>
+
+      
     </>
   )
 }

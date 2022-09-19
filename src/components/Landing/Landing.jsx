@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <div className={`d-flex flex-column justify-content-center ${styles.LandingContainer}`} id="Landing">
-      <div className={styles.landingContainer}>
-        <h1 className={styles.collegeName}>Vidyavardhini's College Of Engineering and Technology </h1>
+      <div className={styles.landingContainer}> <a className={styles.landingLink} href="https://vcet.edu.in">
+      <div className='text-center'> <img src="/logo2.png" style={{height:"100px",marginBottom:"20px",cursor:'pointer'}}/>   </div>
+        <h1 className={`${styles.collegeName} text-light`}>Vidyavardhini's College Of Engineering and Technology </h1></a> 
+
         <p className={`text-center mt-4 ${styles.presents}`}>presents</p>
         <h1 className={styles.mainHeading}>VCET HACKATHON</h1>
         <h3 className={styles.themeName}>Multiverse of Hacking</h3>
