@@ -107,7 +107,7 @@
 .other-pm-img{
     height: 250px;
     width: 350px;
-    /* margin-left: 50px; */
+    margin-left: 20%;
 }
 .second-pm{
     display: flex;
@@ -181,7 +181,7 @@
 }
 
 #ml1, #ml2{
-    margin-left: 150px;
+    margin-left: 50%;
 }
 
 @media only screen and (max-width: 767px){
@@ -365,7 +365,7 @@
 
 
 #ml1, #ml2{
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 }

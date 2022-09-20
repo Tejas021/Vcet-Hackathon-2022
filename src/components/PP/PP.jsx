@@ -1,5 +1,5 @@
 import Prize from "../../assets/prizes/prize.png"
-import winner from "../../assets/prizes/winner.png"
+import winner from "../../assets/prizes/gold.png"
 import second from "../../assets/prizes/secondimg.png"
 import bronze from "../../assets/prizes/bronze1.png"
 import "./PP.css"
