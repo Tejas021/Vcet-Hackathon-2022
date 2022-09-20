@@ -52,8 +52,8 @@ function PP() {
 
                                 </div>
                             </div>
-                            <div className="third-pm">
-                                <img src={bronze} alt="" className="third-pm-img" />
+                            <div className="third-pm" id="ml1">
+                                <img src={bronze} alt="" className="third-pm-img " />
                                 <div className="third-pm-text">
                                     <span className="third-pm-prize"> 4<span className="span-3"  >th</span> prize </span> <br />
                                     <span className="third-pm-amount">5,000</span>
@@ -71,7 +71,7 @@ function PP() {
 
                                 </div>
                             </div>
-                            <div className="third-pm">
+                            <div className="third-pm" id="ml2">
                                 <img src={bronze} alt="" className="third-pm-img" />
                                 <div className="third-pm-text">
                                     <span className="third-pm-prize"> 6<span className="span-3"  >th</span> prize </span> <br />

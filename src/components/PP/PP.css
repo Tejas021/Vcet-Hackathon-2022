@@ -136,8 +136,8 @@
 .remaining-pm{
     display: flex;
     flex-direction: column;
-    margin: auto; 
-    padding-bottom: 30px;
+    /* margin: auto; 
+    padding-bottom: 30px; */
 
 }
 
@@ -178,6 +178,10 @@
     color: white;
     font-family: Azonix;
     font-size: large;
+}
+
+#ml1, #ml2{
+    margin-left: 150px;
 }
 
 @media only screen and (max-width: 767px){
