@@ -362,6 +362,12 @@
     font-family: Azonix;
     font-size: 6px;
 }
+
+
+#ml1, #ml2{
+    margin-left: 0px;
+}
+
 }
 
 
