@@ -6,8 +6,8 @@ import "./PP.css"
 
 function PP() {
     return (
-        <>
-            <div className="pp-container">
+        <div className="py-5">
+            <div className="pp-container ">
                 <div className="pp-c1">
 
                     <img src={Prize} alt="" className="pp-img" />
@@ -84,7 +84,7 @@ function PP() {
                 </div>
             </div>
 
-        </>
+        </div>
     )
 }
 export default PP
