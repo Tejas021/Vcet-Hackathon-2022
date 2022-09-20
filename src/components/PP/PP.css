@@ -136,8 +136,8 @@
 .remaining-pm{
     display: flex;
     flex-direction: column;
-    /* margin: auto; */
-    /* padding-bottom: 30px; */
+    margin: auto; 
+    padding-bottom: 30px;
 
 }
 
