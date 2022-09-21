@@ -57,7 +57,7 @@
     font-family: Azonix;
     font-weight: 900;
     font-size: 50px;
-    letter-spacing: 0.15vw;
+    letter-spacing: 0.25vmax;
     color: #A36CE0;
     /* margin-bottom: 10px; */
 }
@@ -81,11 +81,13 @@
     font-weight: 500;
     color: rgb(252, 190, 33);
 }
-.pp-date{
+
+.pp-date {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.2vw;
 }
+
 .pm {
     margin-top: 30px;
 }
@@ -95,14 +97,15 @@
 }
 
 .first-pm-text {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    text-align: center;
+    /* flex-direction: column; */
     margin: auto;
     margin-left: 20px;
 }
 
 .span-1 {
-    font-size: "x-large"
+    font-size: large;
 }
 
 .first-pm-img {
@@ -111,12 +114,22 @@
     margin-left: 30%;
 }
 
-.first-pm-prize,
-.first-pm-amount {
+.first-pm-prize {
     margin: auto;
     color: white;
-    font-family: Azonix;
-    font-size: xx-large;
+    font-family: Poppins;
+    font-size: 35px;
+    /* border: 2px solid red; */
+}
+
+.first-pm-amount {
+    /* border: 2px solid red; */
+    margin: auto;
+    color: white;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(252, 190, 33);
 }
 
 .other-pm {
@@ -125,14 +138,16 @@
 }
 
 .other-pm-img {
-    height: 250px;
+    /* height: 250px; */
     width: 350px;
     margin-left: 20%;
 }
 
 .second-pm {
     display: flex;
-    width: 50%;
+    min-width: 42vw;
+    /* border: 2px solid red; */
+
 
 }
 
@@ -141,7 +156,8 @@
 }
 
 .second-pm-text {
-    display: flex;
+    text-align: center;
+    /* display: flex; */
     flex-direction: column;
     margin: auto;
     margin-left: 0px;
@@ -150,14 +166,35 @@
 .second-pm-prize,
 .second-pm-amount {
     margin: auto;
-    color: white;
-    font-family: Azonix;
-    font-size: x-large;
+    /* color: white; */
+    font-family: Poppins;
+    /* color: aliceblue; */
+    color: #dbdbdb;
+}
+
+.second-pm-amount {
+    font-size: 35px;
+    letter-spacing: 0.2vmax;
+    font-weight: 600;
+}
+
+.second-pm-prize {
+    font-size: 25px;
+    letter-spacing: 0.1vmax;
+
 }
 
 .remaining-pm {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin: 0 0 0 4vw;
+    min-width: 50vw;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    text-transform: capitalize;
+    /* padding: 2vmax; */
+    /* display: flex; */
+    /* flex-direction: column; */
     /* margin: auto; 
     padding-bottom: 30px; */
 
@@ -165,19 +202,27 @@
 
 .third-pm-top,
 .third-pm-bottom {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
 
 .third-pm {
-    margin-top: 15px;
+    grid-column: span 6;
+    grid-row: span 1;
+    /* border: 2px solid red; */
     display: flex;
+    align-items: center;
+    /* justify-content: space-around;
+     */
+    /* margin-top: 15px; */
+
+    /* display: flex; */
     /* margin-left: 50px; */
 }
 
 .third-pm-img {
     /* margin-left: 50px; */
-    height: 100px;
+    /* height: 100px; */
     width: 100px;
 }
 
@@ -187,22 +232,33 @@
 }
 
 .span-3 {
-    font-size: "medium"
+    font-size: 12px;
 }
 
 .third-pm-text {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: auto; */
     margin-left: 20px;
 }
 
 .third-pm-prize,
 .third-pm-amount {
-    margin: auto;
-    color: white;
-    font-family: Azonix;
-    font-size: large;
+    color: #dbdbdb;
+
+    font-family: Poppins;
+}
+
+.third-pm-prize {
+    letter-spacing: 0.05vmax;
+    font-size: 20px;
+}
+
+.third-pm-amount {
+    font-weight: 500;
+    letter-spacing: 0.05vmax;
+    font-size: 28px;
+    color: #ff7931;
 }
 
 #ml1,
@@ -307,11 +363,12 @@
     .other-pm {
         margin-top: 30px;
         display: flex;
+        flex-flow: column;
     }
 
     .other-pm-img {
         margin-top: 20px;
-        height: 100px;
+        /* height: 100px; */
         width: 100px;
         /* margin-left: 50px; */
     }

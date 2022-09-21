@@ -25,8 +25,8 @@ function PP() {
                 <div className="first-pm">
                     <img src={winner} alt="" className="first-pm-img" />
                     <div className="first-pm-text">
-                        <span className="first-pm-prize"> 1<span className="span-1">st</span> prize </span> <br />
-                        <span className="first-pm-amount">25,000</span>
+                        <span className="first-pm-prize"> 1<span className="span-1">st</span> Prize </span> <br />
+                        <span className="first-pm-amount">&#x20b9; 25,000</span>
 
                     </div>
                 </div>
@@ -35,48 +35,42 @@ function PP() {
                     <div className="second-pm">
                         <img src={second} alt="" className="other-pm-img" />
                         <div className="second-pm-text">
-                            <span className="second-pm-prize"> 2<span className="span-2">nd</span> prize </span> <br />
-                            <span className="second-pm-amount">15,000</span>
+                            <span className="second-pm-prize"> 2<span className="span-1">nd</span> Prize </span> <br />
+                            <span className="second-pm-amount">&#x20b9;15,000</span>
 
                         </div>
                     </div>
                     <div className="remaining-pm">
-                        <div className="third-pm-top">
+                        <div className="third-pm">
+                            <img src={bronze} alt="" className="third-pm-img" />
+                            <div className="third-pm-text">
+                                <span className="third-pm-prize"> 3<span className="span-3"  >rd</span> prize </span> <br />
+                                <span className="third-pm-amount">&#x20b9;5,000</span>
 
-                            <div className="third-pm">
-                                <img src={bronze} alt="" className="third-pm-img" />
-                                <div className="third-pm-text">
-                                    <span className="third-pm-prize"> 3<span className="span-3"  >rd</span> prize </span> <br />
-                                    <span className="third-pm-amount">5,000</span>
-
-                                </div>
-                            </div>
-                            <div className="third-pm" id="ml1">
-                                <img src={bronze} alt="" className="third-pm-img " />
-                                <div className="third-pm-text">
-                                    <span className="third-pm-prize"> 4<span className="span-3"  >th</span> prize </span> <br />
-                                    <span className="third-pm-amount">5,000</span>
-
-                                </div>
                             </div>
                         </div>
-                        <div className="third-pm-bottom">
+                        <div className="third-pm">
+                            <img src={bronze} alt="" className="third-pm-img" />
+                            <div className="third-pm-text">
+                                <span className="third-pm-prize"> 3<span className="span-3"  >rd</span> prize </span> <br />
+                                <span className="third-pm-amount">&#x20b9;5,000</span>
 
-                            <div className="third-pm">
-                                <img src={bronze} alt="" className="third-pm-img" />
-                                <div className="third-pm-text">
-                                    <span className="third-pm-prize"> 5<span className="span-3" >th</span> prize </span> <br />
-                                    <span className="third-pm-amount">5,000</span>
-
-                                </div>
                             </div>
-                            <div className="third-pm" id="ml2">
-                                <img src={bronze} alt="" className="third-pm-img" />
-                                <div className="third-pm-text">
-                                    <span className="third-pm-prize"> 6<span className="span-3"  >th</span> prize </span> <br />
-                                    <span className="third-pm-amount">5,000</span>
+                        </div>
+                        <div className="third-pm">
+                            <img src={bronze} alt="" className="third-pm-img" />
+                            <div className="third-pm-text">
+                                <span className="third-pm-prize"> 3<span className="span-3"  >rd</span> prize </span> <br />
+                                <span className="third-pm-amount">&#x20b9;5,000</span>
 
-                                </div>
+                            </div>
+                        </div>
+                        <div className="third-pm">
+                            <img src={bronze} alt="" className="third-pm-img" />
+                            <div className="third-pm-text">
+                                <span className="third-pm-prize"> 3<span className="span-3"  >rd</span> prize </span> <br />
+                                <span className="third-pm-amount">&#x20b9;5,000</span>
+
                             </div>
                         </div>
                     </div>
