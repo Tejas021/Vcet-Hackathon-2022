@@ -8,7 +8,7 @@ import './About.scss'
 function About() {
 
     return (
-        <div className='h-100 mb-5' id="About" style={{paddingTop: "100px"}}>
+        <div className='h-100 mb-5' id="About" >
             <h1 className='text-light text-center my-4 mt-md-5'>About Us</h1>
             <div class={`${styles.AboutParent} container`}>
 
