@@ -42,20 +42,21 @@ const Contact = () => {
                         <div className={`${ContactCss.content2} ${ContactCss.add}`}>
                             <ul>
                                 <li>
+                                    
                                     <ion-icon name="location-outline"></ion-icon>
-                                    <span>K. T. Marg, Dist-Palghar, Shastri Nagar
-                                        Vasai West, Maharashtra - 401202 </span>
+                                    <span> <a href=""> K. T. Marg, Dist-Palghar, Shastri Nagar
+                                        Vasai West, Maharashtra - 401202  </a></span>
 
                                 </li>
                                 <li>
                                     <ion-icon name="call-outline"></ion-icon>
-                                    <span>  <a href="">0250-2338234</a></span>
+                                    <span><a href="">0250-2338234</a></span>
                                 </li>
                                 <li>
-                                    <address>
+                                   
                                     <ion-icon name="mail-outline"></ion-icon>
                                         <span><a href="mailto:vcet.hackathon@vcet.edu.in" target="_blank">vcet.hackathon@vcet.edu.in</a></span>
-                                    </address>
+                                    
                                 </li>
                                 <li>
                                     <ion-icon name="globe-outline"></ion-icon>
