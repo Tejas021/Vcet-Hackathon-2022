@@ -1,0 +1,433 @@
+@import url(//db.onlinewebfonts.com/c/50cd2aad9c8f35800bb6beac3ad42f16?family=Azonix);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: "Azonix";
+    src: url("//db.onlinewebfonts.com/t/50cd2aad9c8f35800bb6beac3ad42f16.eot");
+}
+
+.pp-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10vw 0 10vw;
+    background-image: url("../../assets/prizes/PRIZE-BG.jpg");
+}
+
+.pp-c1,
+.pp-c2 {
+    /* display: flex; */
+}
+
+.pp-c1 {
+    width: 30%;
+    /* padding-bottom: 10px; */
+}
+
+.pp-c2 {
+    /* border: 2px solid red; */
+    height: min-content;
+    /* flex-direction: column; */
+    /* margin: auto; */
+    width: 100%;
+    /* display: flex; */
+    /* flex-flow: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.pp-img {
+    height: 40vh;
+    /* margin: 0 0 0 15vw; */
+    /* border: 2px solid red; */
+}
+
+.pp-heading,
+.pp-pool,
+.pp-amount,
+.pp-date {
+    /* border: 2px solid red; */
+    color: white;
+    margin: 0;
+    /* letter-spacing: 8px; */
+}
+
+.pp-heading {
+    font-family: Azonix;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 0.25vmax;
+    color: #A36CE0;
+    /* margin-bottom: 10px; */
+}
+
+.pp-pool {
+    /* letter-spacing: 3px; */
+    /* padding-top: 10px; */
+    font-family: Poppins;
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 25px;
+    letter-spacing: 0.1vw;
+    /* font-weight: 2001; */
+    font-weight: 400;
+    /* margin-top: 10px; */
+}
+
+.pp-amount {
+    letter-spacing: 0px;
+    font-size: 65px;
+    font-weight: 500;
+    color: rgb(252, 190, 33);
+}
+
+.pp-date {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+}
+
+.pm {
+    margin-top: 30px;
+}
+
+.first-pm {
+    display: flex;
+}
+
+.first-pm-text {
+    /* display: flex; */
+    text-align: center;
+    /* flex-direction: column; */
+    margin: auto;
+    margin-left: 20px;
+}
+
+.span-1 {
+    font-size: large;
+}
+
+.first-pm-img {
+    height: 300px;
+    width: 420px;
+    margin-left: 30%;
+}
+
+.first-pm-prize {
+    margin: auto;
+    color: white;
+    font-family: Poppins;
+    font-size: 35px;
+    /* border: 2px solid red; */
+}
+
+.first-pm-amount {
+    /* border: 2px solid red; */
+    margin: auto;
+    color: white;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(252, 190, 33);
+}
+
+.other-pm {
+    margin-top: 30px;
+    display: flex;
+}
+
+.other-pm-img {
+    /* height: 250px; */
+    width: 350px;
+    margin-left: 20%;
+}
+
+.second-pm {
+    display: flex;
+    width: 42vw;
+    /* border: 2px solid red; */
+}
+
+.span-2 {
+    font-size: "large"
+}
+
+.second-pm-text {
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0px;
+}
+
+.second-pm-prize,
+.second-pm-amount {
+    margin: auto;
+    /* color: white; */
+    font-family: Poppins;
+    /* color: aliceblue; */
+    color: #dbdbdb;
+}
+
+.second-pm-amount {
+    font-size: 35px;
+    letter-spacing: 0.2vmax;
+    font-weight: 600;
+}
+
+.second-pm-prize {
+    font-size: 25px;
+    letter-spacing: 0.1vmax;
+}
+
+.remaining-pm {
+    display: grid;
+    margin: 0 0 0 4vw;
+    min-width: 50vw;
+    /* border: 2px solid red; */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    text-transform: capitalize;
+    /* padding: 2vmax; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: auto; 
+    padding-bottom: 30px; */
+}
+
+.third-pm {
+    grid-column: span 6;
+    grid-row: span 1;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around;
+     */
+    /* margin-top: 15px; */
+    /* display: flex; */
+    /* margin-left: 50px; */
+}
+
+.third-pm-img {
+    /* margin-left: 50px; */
+    /* height: 100px; */
+    width: 100px;
+}
+
+.third-pm {
+    display: flex;
+}
+
+.span-3 {
+    font-size: 12px;
+}
+
+.third-pm-text {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin: auto; */
+    margin-left: 20px;
+}
+
+.third-pm-prize,
+.third-pm-amount {
+    color: #dbdbdb;
+    font-family: Poppins;
+}
+
+.third-pm-prize {
+    letter-spacing: 0.05vmax;
+    font-size: 20px;
+}
+
+.third-pm-amount {
+    font-weight: 500;
+    letter-spacing: 0.05vmax;
+    font-size: 28px;
+    color: #ff7931;
+}
+
+#ml1,
+#ml2 {
+    margin-left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .pp-container {
+        height: 150px;
+    }
+    /* .pp-c1{
+    width: 30%;
+    padding-bottom: 10px;
+} */
+    .pp-c1 {
+        width: auto;
+    }
+    .pp-c2 {
+        /* flex-direction: column;
+    margin: auto;
+    width: 70%;
+    text-align: center; */
+        /* margin-left: 7px; */
+    }
+    .pp-img {
+        height: 140px;
+        width: 140px;
+        margin-left: 0;
+    }
+    .pp-heading,
+    .pp-pool,
+    .pp-amount,
+    .pp-date {
+        letter-spacing: 3px;
+    }
+    .pp-heading {
+        /* font-family: Azonix;     */
+        font-size: 10px;
+        /* color: #A36CE0; */
+        margin-bottom: 5px;
+    }
+    .pp-pool {
+        /* letter-spacing: 3px;
+    padding-top: 10px;
+    font-family: Poppins; */
+        font-size: 11px;
+        font-weight: 500;
+        /* margin-top: 10px; */
+    }
+    .pp-amount {
+        /* letter-spacing: 0px; */
+        /* font-size: 12px; */
+        font-size: 25px;
+        /* font-weight: 500;
+    color: rgb(252, 190, 33); */
+    }
+    .pp-date {
+        font-size: 10px;
+    }
+    .pm {
+        margin-top: 30px;
+    }
+    /* .first-pm{
+    display: flex;
+} */
+    .first-pm-text {
+        /* display: flex;
+    flex-direction: column; */
+        margin: auto;
+        margin-left: 0px;
+    }
+    .first-pm-img {
+        height: 100px;
+        width: 150px;
+        margin-left: auto;
+    }
+    .first-pm-prize,
+    .first-pm-amount {
+        /* margin: auto;
+    color: white;
+    font-family: Azonix; */
+        font-family: Poppins;
+        font-size: 25px;
+    }
+    .span-1 {
+        font-size: 5px;
+    }
+    .other-pm {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column;
+    }
+    .other-pm-img {
+        margin-top: 20px;
+        /* height: 100px; */
+        width: 100px;
+        margin-left: 0;
+    }
+    .second-pm {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: auto; */
+        /* margin: 0 auto; */
+        /* width: 100%; */
+    }
+    .second-pm-text {
+        /* display: flex;
+    flex-direction: column; */
+        margin: auto;
+        margin-left: 0px;
+        display: grid;
+        place-items: center;
+    }
+    .second-pm-prize,
+    .second-pm-amount {
+        /* margin: auto;
+    color: white;
+    font-family: Azonix; */
+        font-family: Poppins;
+        font-size: 20px;
+    }
+    .second-pm-prize {
+        padding-top: 20px;
+    }
+    .span-2 {
+        font-size: 6px;
+    }
+    .remaining-pm {
+        /* width: 57%;
+        margin-left: 30px; */
+        /* display: flex;
+        flex-direction: column; */
+        /* grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr)); */
+        /* margin: auto; */
+        /* padding-bottom: 30px; */
+        display: grid;
+        place-items: center;
+        margin-top: 2rem;
+    }
+    .third-pm-top,
+    .third-pm-bottom {
+        display: flex;
+        /* justify-content: flex-start; */
+    }
+    .third-pm {
+        margin-top: 15px;
+        display: flex;
+        margin-left: 0;
+    }
+    .third-pm-img {
+        margin-left: 0;
+        height: 50px;
+        width: 50px;
+    }
+    /* .third-pm{
+    display: flex;
+    
+} */
+    .span-3 {
+        font-size: 5px;
+    }
+    .third-pm-text {
+        /* display: flex;
+    flex-direction: column; */
+        /* margin: auto;
+        margin-left: 0;
+        margin-right: 15px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .third-pm-prize,
+    .third-pm-amount {
+        margin: auto;
+        color: white;
+        font-family: Poppins;
+        font-size: 12px;
+    }
+    #ml1,
+    #ml2 {
+        margin-left: 10px;
+    }
+    /* changes */
+}

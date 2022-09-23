@@ -19,6 +19,8 @@ import Timeline from '../../components/Timeline/Timeline'
 import ProblemStatements from '../../components/Problem_Statement/ProblemStatements'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import PrizePool from '../../components/prizes/PrizePool'
+import PP from '../../components/PP/PP'
 
 
 const Home = ({ success }) => {
@@ -50,7 +52,8 @@ const Home = ({ success }) => {
       <Landing />
       <About />
       <Timer />
-      <PrizePool />
+      {/* <PrizePool /> */}
+      <PP/>
      
       <ProblemStatements />
       <Timeline />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const Rules = () => {
   return (
     <div className='container p-md-5 p-3 py-4 my-5' id="Guidelines">
-      <h1 className={`text-center text-light mb-3`}>Event Guidlines</h1>
+      <h1 className={`text-center text-light mb-3`}>Event Guidelines</h1>
 
       <h3 className={`${styles.textPurple} mb-3`}>Rules</h3>
       <ul className={`text-light ${styles.ruleList}`}>
@@ -34,7 +34,9 @@ const Rules = () => {
         <li>NOTE: The order preference of the problem statements is solely for our reference. We do not assure that the topic allocation will be based on your top preferences only</li>
         <li>Last date for submission of abstract is <span className={`${styles.hLight}`}>September 23, 2022</span>.</li>
         <li> The selected teams will get a confirmation by <span className={`${styles.hLight}`}>September 30, 2022</span>.</li>
-        <li> Payment for the selected teams i.e. Rs.500 per team should be made by <span className={`${styles.hLight}`}>September 26, 2022</span>. Entry fee payment of the entire team should be done in a single transaction.</li>
+
+        <li> Payment for the selected teams i.e. Rs.500 per team should be made by <span className={`${styles.hLight}`}>October 2, 2022</span>. Entry fee payment of the entire team should be done in a single transaction.</li>
+
         <li>Out of the 3 abstracts submitted, the final Problem Statement for your team will be disclosed on <span className={`${styles.hLight}`}>October 6, 2022.</span></li>
         <li> All done, your squad is all set to seize the multiverse of hacking.</li>
         <li> Following are the details of payment.</li>
