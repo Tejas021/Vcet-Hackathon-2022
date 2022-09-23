@@ -46,7 +46,7 @@ function Sponsor() {
                 </a>
                 <div className="kp h3">Knowledge Partner</div>
                 <a href="/" className="kps sponsor-card" target="_blank">
-                    <img src="/sponsors/contentstack.png" alt="" />
+                    <img src="/sponsors/upcoming_engineer_2021.png" alt="" />
                 </a>
                 <div className="mp h3">Media Partner</div>
                 <a href="/" className="mps sponsor-card" target="_blank">
