@@ -20,7 +20,7 @@
     aspect-ratio: 1/1;
 }
 
-.cashPrice{
+.cashPrice {
     font-size: 65px;
     font-weight: 800;
     color: gold;
@@ -33,10 +33,25 @@
     /* border: 2px solid red; */
     text-align: center;
     color: var(--c5);
-    font-family: ""Poppins", sans-serif";
+    font-family: "" Poppins", sans-serif";
     font-weight: 200;
     font-size: 50px;
     letter-spacing: 1px
+}
+
+.mainPrizeDistributionContainer {
+    /* height: 10vh; */
+    width: 100vw;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 1vh;
+}
+
+.firstPrizeContainer {
+    grid-column: 5/9;
+    aspect-ratio: 16/3;
+    border: 2px solid blue;
 }
 
 @media only screen and (max-width:600px) {
@@ -45,7 +60,7 @@
         margin-top: 50px;
     }
 
-    .cashPrice{
+    .cashPrice {
         font-size: 45px;
     }
 
@@ -54,7 +69,7 @@
         margin-top: 2px;
     }
 
-    .astroImage{
+    .astroImage {
         max-width: 100%;
     }
 }
