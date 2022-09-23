@@ -6,7 +6,7 @@ import "./PP.css"
 
 function PP() {
     return (
-        <div className="py-5">
+        <div className="py-5" id="Prizes">
             <div className="pp-container ">
                 <div className="pp-c1">
                     <img src={Prize} alt="" className="pp-img" />
