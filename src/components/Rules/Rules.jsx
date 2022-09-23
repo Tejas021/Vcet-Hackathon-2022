@@ -12,7 +12,7 @@ const Rules = () => {
       <ul className={`text-light ${styles.ruleList}`}>
         <li> The VCET Hackathon will take place on<span className={`${styles.hLight}`}> 7th & 8th October 2022.</span> </li>
         <li> A team can consist of 1 to 4 members. Every member of the team must be a student of a university or a college. A team can have members from different colleges.</li>
-        <li>  Entry fees is <span className={`${styles.hLight}`}>Rs.500</span> per team.</li>
+        <li>  Entry fees is <span className={`${styles.hLight}`}>&#8377; 500</span> per team.</li>
         <li> Participants are free to use open standard repositories, APIs and publically available libraries.</li>
         <li>  Progress of the project will be tracked during Hackathon. Use of readymade code or precompiled code will lead to disqualification</li>
         <li> Participants are expected to behave professionally and responsibly.</li>
@@ -32,10 +32,10 @@ const Rules = () => {
         <li>  You have to submit 3 abstracts (one for each domain) to these Problem Statements out of <span className={`${styles.hLight}`}>all 9 Problem Statements</span> consising of Implementation & Technology Stack out of which 1 will be allocated and notified to each team one day prior via email.</li>
         <li> Check out the sample abstract <span style={{ fontWeight: 'bold', cursor: "pointer", textDecoration: "underline" }} className={`${styles.textPurple} `} data-bs-toggle="modal" data-bs-target="#SampleAbs">here</span></li>
         <li>NOTE: The order preference of the problem statements is solely for our reference. We do not assure that the topic allocation will be based on your top preferences only</li>
-        <li>Last date for submission of abstract is <span className={`${styles.hLight}`}>September 23, 2022</span>.</li>
+        <li>Last date for submission of abstract is <span className={`${styles.hLight}`}>September 29, 2022</span>.</li>
         <li> The selected teams will get a confirmation by <span className={`${styles.hLight}`}>September 30, 2022</span>.</li>
 
-        <li> Payment for the selected teams i.e. Rs.500 per team should be made by <span className={`${styles.hLight}`}>October 2, 2022</span>. Entry fee payment of the entire team should be done in a single transaction.</li>
+        <li> Payment for the selected teams i.e. &#8377; 500 per team should be made by <span className={`${styles.hLight}`}>October 2, 2022</span>. Entry fee payment of the entire team should be done in a single transaction.</li>
 
         <li>Out of the 3 abstracts submitted, the final Problem Statement for your team will be disclosed on <span className={`${styles.hLight}`}>October 6, 2022.</span></li>
         <li> All done, your squad is all set to seize the multiverse of hacking.</li>
