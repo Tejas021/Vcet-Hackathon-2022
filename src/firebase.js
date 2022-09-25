@@ -5,6 +5,7 @@ import {
   getFirestore,
   collection,
   addDoc,
+  getDocs
 } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -36,5 +37,5 @@ const analytics = getAnalytics(app);
 
 
 export {
-addDoc,collection,db
+addDoc,collection,db,getDocs
 }
