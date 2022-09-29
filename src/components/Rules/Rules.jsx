@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from "./Rules.module.css"
 import { Link } from "react-router-dom"
+import { ToastContainer, toast } from 'react-toastify';
 
 const Rules = () => {
   return (
@@ -26,7 +27,7 @@ const Rules = () => {
 
       <h3 className={`${styles.textPurple} mb-3`}>Registration</h3>
 
-      <Link to="/register" className={`${styles.Link}`}><button className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}>REGISTER NOW</button></Link>
+     <button onClick={()=>toast.error("Registrations are closed !")} className={`${styles.bgBlue} btn text-light m-3 p-2 px-4`}>REGISTER NOW</button>
       <ul className={`text-light ${styles.ruleList}`}>
         <li> 9 Problem Statements will be provided from our end.</li>
         <li>  You have to submit 3 abstracts (one for each domain) to these Problem Statements out of <span className={`${styles.hLight}`}>all 9 Problem Statements</span> consising of Implementation & Technology Stack out of which 1 will be allocated and notified to each team one day prior via email.</li>
@@ -115,6 +116,18 @@ const Rules = () => {
         <button className={`${styles.bgBlue} btn text-light m-3 me-2 p-2 px-4 `} data-bs-toggle="modal" data-bs-target="#NEFT">NEFT</button>
         <button className={`${styles.bgBlue} btn text-light m-3 ms-2 p-2 px-4`} data-bs-toggle="modal" data-bs-target="#UPI">UPI</button>
       </div>
+
+      <ToastContainer
+      position="bottom-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
 
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Landing.module.css";
 import { Link } from "react-router-dom";
-
+import { ToastContainer, toast } from 'react-toastify';
 
 const Landing = () => {
   return (
@@ -16,8 +16,21 @@ const Landing = () => {
        
       </div>
       <div className={styles.RegisterBtnDiv}>
-        <Link to="/register" className={`${styles.linktoreg}`}><button className={`  ${styles.RegisterBtn} btn text-light mx-4 my-2 p-3 px-4`}>REGISTER NOW</button></Link>
+      <button onClick={()=>toast.error("Registrations are closed !")} className={`  ${styles.RegisterBtn} btn text-light mx-4 my-2 p-3 px-4`}>REGISTER NOW</button>
         </div>
+
+        <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+
     </div>
   )
 }

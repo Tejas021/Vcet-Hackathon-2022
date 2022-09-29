@@ -18,7 +18,7 @@ function App() {
   <Router>
     <Routes>
     <Route path='/' element={<Home success={success}/>}/>
-    <Route path='register' element={<Form setSuccess={setSuccess} />}/>
+   
     <Route/>
     </Routes>
 
