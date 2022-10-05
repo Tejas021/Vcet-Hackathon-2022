@@ -256,6 +256,7 @@
     .cpb-spons{
         grid-column: 10/16;
         grid-row: 6/7;
+        aspect-ratio: 5/2;
     }
     .ep {
         grid-column: 3/9;
@@ -338,9 +339,16 @@
         grid-column: 14/20;
         grid-row: 12/13;
     }
-
+    .current_mp{
+        grid-column: 10/16;
+    }
     .mps {
         grid-column: 14/20;
+        grid-row: 13/14;
+        aspect-ratio: 4/1.5;
+    }
+    .current_mps {
+        grid-column: 10/16;
         grid-row: 13/14;
         aspect-ratio: 4/1.5;
     }
