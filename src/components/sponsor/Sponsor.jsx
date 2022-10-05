@@ -69,8 +69,8 @@ function Sponsor() {
                 <a href="https://internetivo.com/" className="pb-spons-1 sponsor-card" target="_blank">
                     <img src="/sponsors/internetivo.png" alt="" />
                 </a>
-                <div className="pb2 h2">Co-powered by</div>
-                <a href="/" className="pb-spons-2 sponsor-card" target="_blank">
+                <div className="cpb old-cpb h2">Co-powered by</div>
+                <a href="/" className="cpb-spons old-cpb-spons sponsor-card" target="_blank">
                     <img src="/sponsors/un_bank_2021.JPG" alt="" />
                 </a>
                 <div className="aws h2">Associated with</div>
