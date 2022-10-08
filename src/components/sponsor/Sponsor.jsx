@@ -1,5 +1,6 @@
 import React from 'react'
 import "./sponsor.css"
+import Giber from "../sponsor/Giber.jpg"
 function Sponsor() {
     return (
 
@@ -19,9 +20,13 @@ function Sponsor() {
                 <a href="/" className="pb-spons-2 sponsor-card" target="_blank">
                     <img src="/sponsors/G_Systems.png" alt="" />
                 </a>
-                <div className="cpb h2">Co-powered by</div>
-                <a href="/" className="cpb-spons sponsor-card" target="_blank">
+                <div className="cpb1 cpb h2">Co-powered by</div>
+                <a href="/" className="cpb-spons-1 sponsor-card" target="_blank">
                     <img src="/sponsors/software_ag.png" alt="" />
+                </a>
+                <div className="cpb2 cpb h2">Co-powered by</div>
+                <a href="/" className="cpb-spons-2 sponsor-card" target="_blank">
+                    <img src="/sponsors/Giber.jpg" alt="" />
                 </a>
                 <div className="aws h2">Associated with</div>
                 <div className="ep h3">Coding Partner</div>
