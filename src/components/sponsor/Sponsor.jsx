@@ -1,6 +1,6 @@
 import React from 'react'
 import "./sponsor.css"
-import Giber from "../sponsor/Giber.jpg"
+// import Giber from "../sponsor/Giber.jpg"
 function Sponsor() {
     return (
 
@@ -53,7 +53,7 @@ function Sponsor() {
                 <a href="/" className="codeps sponsor-card" target="_blank">
                     <img src="/sponsors/cafe_cine_fx.png" alt="" />
                 </a>
-                {/* <div className="kp h3">Knowledge Partner</div>
+                {/*comment <div className="kp h3">Knowledge Partner</div>
                 <a href="/" className="kps sponsor-card" target="_blank">
                     <img src="/sponsors/upcoming_engineer_2021.png" alt="" />
                 </a> */}
@@ -64,7 +64,7 @@ function Sponsor() {
 
             </div>
             <br /><br /><br /><br />
-            <h1 className='text-center text-light mb-3 mb-md-5'>Previous Sponsors</h1>
+            {/* <h1 className='text-center text-light mb-3 mb-md-5'>Previous Sponsors</h1>
             <div className="spons-cont grid" id="spons-cont">
                 <div className="t1 h2">Title Sponsor</div>
                 <a href="https://deardigital.be/" className="title-spons sponsor-card" target="_blank">
@@ -112,7 +112,7 @@ function Sponsor() {
                     <img src="/sponsors/loksatta.png" alt="" />
                 </a>
 
-            </div>
+            </div> */}
         </div>
     )
 }
