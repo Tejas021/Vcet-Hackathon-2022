@@ -13,7 +13,7 @@ function PP() {
                 </div>
                 <div className="pp-c2">
                     <p className="pp-heading">MULTIVERSE OF HACKING</p>
-                    <p className="pp-pool">PRIZE POOL</p>
+                    <p className="pp-pool">PREVIOUS YEAR PRIZE POOL</p>
                     <p className="pp-amount">&#x20b9; 60,000</p>
                     <p className="pp-date">HACK IT ON 7TH & 8TH OCT</p>
 

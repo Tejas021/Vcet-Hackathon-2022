@@ -12,7 +12,7 @@ function ProblemStatements() {
         )}
       >
         <br />
-        <div className={styles.heading1}>Problem Statements</div>
+        <div className={styles.heading1}>Previous Year Problem Statements</div>
         <br />
         <div className={styles.heading3}>Cyber Security</div>
         <div className={styles.probsContainer}>

@@ -29,7 +29,7 @@ function Faq() {
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div className="accordion-body text-light">
-                    VCET Hackathon’21 Reloaded will be held online.
+                    VCET Hackathon’23 Reloaded will be held online.
                   </div>
                 </div>
               </div>

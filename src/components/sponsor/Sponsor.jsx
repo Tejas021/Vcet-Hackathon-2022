@@ -1,12 +1,12 @@
 import React from 'react'
 import "./sponsor.css"
-import Giber from "../sponsor/Giber.jpg"
+// import Giber from "../sponsor/Giber.jpg"
 function Sponsor() {
     return (
 
         <div className="main-container" id="Sponsors">
 
-            <h1 className='text-center text-light mb-3 mb-md-5'>Our Sponsors</h1>
+            <h1 className='text-center text-light mb-3 mb-md-5'>Our Previous Year Sponsors</h1>
             <div className="spons-cont grid" id="spons-cont">
                 <div className="t1 h2">Title Sponsor</div>
                 <a href="https://deardigital.be/" className="title-spons sponsor-card" target="_blank">

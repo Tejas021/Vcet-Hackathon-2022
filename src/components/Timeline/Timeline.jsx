@@ -94,7 +94,7 @@ function Timeline() {
 
   return (
     <div className='py-5'>
-      <h1 className="title my-5">Timeline</h1>
+      <h1 className="title my-5">Previous Year Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
